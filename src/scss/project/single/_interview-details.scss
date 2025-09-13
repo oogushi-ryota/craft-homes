@@ -1,0 +1,173 @@
+@use "foundation/variables" as *;
+
+.p-interview-details {
+  & {
+    margin-top: 16rem;
+    padding-bottom: 17.6rem;
+
+    @media (max-width: 767px) {
+      margin-top: 9.6rem;
+      padding-bottom: 9.6rem;
+    }
+
+    &__inner {
+      width: 108rem;
+      margin: 0 auto;
+
+      @media (max-width: 767px) {
+        width: 100%;
+        padding: 0 2rem;
+      }
+    }
+
+    &__thumb {
+      position: relative;
+      margin-bottom: 8rem;
+
+      @media (max-width: 767px) {
+        margin-bottom: 4rem;
+      }
+    }
+
+    &__img {
+      width: 100%;
+      height: 72rem;
+      aspect-ratio: 1080 / 720;
+
+      @media (max-width: 767px) {
+        height: 33.5rem;
+        aspect-ratio: 335 / 335;
+      }
+
+      img {
+        height: 100%;
+        border-radius: 3rem;
+        object-fit: cover;
+        object-position: top;
+
+        @media (max-width: 767px) {
+          border-radius: 2rem;
+        }
+      }
+    }
+
+    &__ttlarea {
+      width: 77.3rem;
+      height: auto;
+      padding: 2rem;
+      background-color: #FEFCF6;
+      border-radius: 0 2rem 0 0;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      @media (max-width: 767px) {
+        width: calc(100% - 4rem);
+        padding: 1.2rem;
+      }
+    }
+
+    &__name {
+      font-size: 1.8rem;
+      font-weight: 500;
+      line-height: 100%;
+
+      @media (max-width: 767px) {
+        font-size: 1.4rem;
+      }
+    }
+
+    &__ttl {
+      font-size: 3.4rem;
+      font-weight: 500;
+      line-height: 150%;
+
+      @media (max-width: 767px) {
+        font-size: 2rem;
+      }
+    }
+
+    &__cont {
+      // & > h2 {
+      //   margin-top: 0 !important;
+      // }
+
+      h2,
+      h3,
+      h4 {
+        color: $color-orange;
+        font-weight: 700;
+        line-height: 150%;
+        display: inline-block;
+        margin: 3.2rem 0 1.8rem;
+      }
+
+      h2 {
+        font-size: 2.8rem;
+        border-bottom: solid 1px $color-orange;
+
+        @media (max-width: 767px) {
+          font-size: 2.4rem;
+        }
+      }
+
+      h3 {
+        font-size: 2.4rem;
+
+        @media (max-width: 767px) {
+          font-size: 2rem;
+        }
+      }
+
+      h4 {
+        font-size: 2rem;
+
+        @media (max-width: 767px) {
+          font-size: 1.8rem;
+        } 
+      }
+
+      p {
+        font-weight: 500;
+        line-height: 200%;
+      }
+
+      figure {
+        width: 100%;
+        height: auto;
+        margin: 8rem 0;
+
+        @media (max-width: 767px) {
+          margin: 4rem 0;
+        } 
+
+        img {
+          border-radius: 3rem;
+
+          @media (max-width: 767px) {
+            border-radius: 2rem;
+          }
+        }
+      }
+    }
+
+    &__btn-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 5.6rem;
+
+      @media (max-width: 767px) {
+        margin-top: 3.2rem;
+      }
+    }
+
+    &__svg {
+      right: unset;
+      left: 2rem;
+      transform: translateY(-50%) scale(-1, -1);
+      -webkit-transform: translateY(-50%) scale(-1, -1);
+      -ms-transform: translateY(-50%) scale(-1, -1);
+    }
+  }
+}

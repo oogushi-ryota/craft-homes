@@ -1,0 +1,28 @@
+@use "foundation/variables" as *;
+
+.p-interview-fv {
+  & {
+    &__txt-obj {
+      position: relative;
+
+      &::before {
+        content: "";
+        width: 40.1rem;
+        height: 4.5rem;
+        background-image: url(../img/interview/fv/ttl_obj.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        bottom: -2rem;
+        left: 0;
+        z-index: -1;
+
+        @media (max-width: 767px) {
+          width: 22rem;
+          height: 2.5rem; 
+          bottom: -.6rem;
+        }
+      }
+    }
+  }
+}

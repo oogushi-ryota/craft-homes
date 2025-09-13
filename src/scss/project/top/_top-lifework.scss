@@ -1,0 +1,118 @@
+@use "foundation/variables" as *;
+
+.p-top-lifework {
+  & {
+    margin-top: 16rem;
+
+    @media (max-width: 767px) {
+      margin-top: 8rem;
+    }
+
+    &__cont {
+      width: 100%;
+      height: auto;
+      padding: 8rem;
+      background-image: url(../img/top/lifework/lifework_bg.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 3rem;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+
+      @media (max-width: 767px) {
+        display: block;
+        padding: 6.4rem 2rem;
+        border-radius: 2rem;
+      }
+    }
+
+    &__img {
+      width: 49rem;
+      position: relative;
+
+      @media (max-width: 767px) {
+        width: 100%;
+      }
+
+      &::after {
+        content: "";
+        width: 8.5rem;
+        height: 15.1rem;
+        background-image: url(../img/top/lifework/lifework_obj.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        bottom: -2.1rem;
+        right: -4.7rem;
+
+        @media (max-width: 767px) {
+          width: 5.6rem;
+          height: 10rem;
+          bottom: -5.3rem;
+          right: -.3rem;
+        }
+      }
+
+      img {
+        border-radius: 2rem;
+
+        @media (max-width: 767px) {
+          border-radius: 1.5rem;
+        }
+      }
+    }
+
+    &__txtarea {
+      width: 43rem;
+
+      @media (max-width: 767px) {
+        width: 100%;
+        margin-top: 4rem;
+      }
+    }
+
+    &__txt-obj {
+      position: relative;
+      z-index: 1;
+
+      &::after {
+        content: "";
+        width: 19rem;
+        height: 2rem;
+        background-image: url(../img/top/philosophy/ttl_obj.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+
+        @media (max-width: 767px) {
+          width: 14rem;
+          height: 1.7rem;
+          bottom: -.2rem;
+        }
+      }
+    }
+
+    &__txt {
+      margin-top: 5.6rem;
+
+      @media (max-width: 767px) {
+        margin-top: 4rem;
+      }
+    }
+
+    &__btn-wrap {
+      margin-top: 5.6rem;
+
+      @media (max-width: 767px) {
+        margin-top: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}

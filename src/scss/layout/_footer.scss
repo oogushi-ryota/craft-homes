@@ -1,0 +1,136 @@
+@use '../foundation/variables' as *;
+
+.l-footer {
+  & {
+    &__cont {
+      padding: 16rem 0;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+
+      @media (max-width: 767px) {
+        padding: 4rem 0;
+        flex-direction: column;
+        align-items: center;
+        gap: 4rem;
+      }
+    }
+
+    &__left {
+      @media (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    &__logo {
+      width: 10rem;
+
+      @media (max-width: 767px) {
+        width: 6rem;
+      }
+    }
+
+    &__official-link {
+      margin-top: 4rem;
+
+      @media (max-width: 767px) {
+        margin-top: 2rem;
+      }
+    }
+
+    &__official-link {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 1.2rem;
+
+      @media (max-width: 767px) {
+        gap: .4rem;
+      }
+    }
+
+    &__official-txt {
+      color: $color-black;
+      font-size: 1.8rem;
+      font-weight: 500;
+      line-height: 100%;
+      letter-spacing: .05em;
+    }
+
+    &__official-icon {
+      width: 2.4rem;
+    }
+
+    &__nav-list {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-end;
+      gap: 10rem;
+
+      @media (max-width: 767px) {
+        flex-direction: column;
+        gap: 4rem;
+      }
+    }
+
+    &__nav-link {
+      color: $color-black;
+      font-size: 1.8rem;
+      font-weight: 500;
+      line-height: 100%;
+      letter-spacing: .05em;
+
+      & + .l-footer__menu-list {
+        margin-top: 3.2rem;
+
+        @media (max-width: 767px) {
+          margin-top: 1rem;
+        }
+      }
+    }
+
+    &__menu-item {
+      &:not(:first-child) {
+        margin-top: 2.4rem;
+
+        @media (max-width: 767px) {
+          margin-top: 1.6rem;
+        }
+
+        & > .l-footer__nav-link {
+          margin-top: 1.6rem;
+          display: inline-block;
+        }
+      }
+    }
+
+    &__menu-link {
+      color: $color-black;
+      font-size: 1.6rem;
+      line-height: 100%;
+      letter-spacing: .05em;
+    }
+
+    &__menu-link-line {
+      color: $color-orange;
+    }
+
+    &__small {
+      font-size: 1.4rem;
+      line-height: 100%;
+      letter-spacing: 0;
+      text-align: center;
+      padding: 2rem;
+      background-color: $color-yellow;
+      display: block;
+
+      @media (max-width: 767px) {
+        font-size: 1.2rem;
+        padding: 1.2rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,41 @@
+@use "foundation/variables" as *;
+
+.p-philosophy-fv {
+  & {
+    &__ttl {
+      margin-top: 12rem;
+
+      @media (max-width: 767px) {
+        margin-top: 6.4rem;
+      }
+
+      &::before {
+        @media (max-width: 767px) {
+          top: 26%;
+        }
+      }
+    }
+
+    &__txt-obj {
+      position: relative;
+
+      &::before {
+        content: "";
+        width: 35.1rem;
+        height: 3.9rem;
+        background-image: url(../img/philosophy/fv/ttl_obj.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        bottom: -1rem;
+        left: 0;
+        z-index: -1;
+
+        @media (max-width: 767px) {
+          width: 23rem;
+          height: 2.7rem;
+        }
+      }
+    }
+  }
+}

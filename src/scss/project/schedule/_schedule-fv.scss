@@ -1,0 +1,28 @@
+@use "foundation/variables" as *;
+
+.p-schedule-fv {
+  & {
+    &__txt-obj {
+      position: relative;
+
+      &::before {
+        content: "";
+        width: 45.2rem;
+        height: 5.1rem;
+        background-image: url(../img/schedule/fv/ttl_obj.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        bottom: -2rem;
+        left: 0;
+        z-index: -1;
+
+        @media (max-width: 767px) {
+          width: 29rem;
+          height: 3.3rem; 
+          bottom: -1.4rem;
+        }
+      }
+    }
+  }
+}

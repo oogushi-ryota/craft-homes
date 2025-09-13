@@ -1,0 +1,28 @@
+@use "foundation/variables" as *;
+
+.p-entry-fv {
+  & {
+    &__txt-obj {
+      position: relative;
+
+      &::before {
+        content: "";
+        width: 26rem;
+        height: 2.9rem;
+        background-image: url(../img/entry/fv/ttl_obj.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        bottom: -1rem;
+        left: 0;
+        z-index: -1;
+
+        @media (max-width: 767px) {
+          width: 14rem;
+          height: 1.6rem;
+          bottom: 0;
+        }
+      }
+    }
+  }
+}

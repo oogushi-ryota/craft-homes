@@ -1,0 +1,229 @@
+@use "foundation/variables" as *;
+
+.p-entry-cont {
+  & {
+    margin-top: 16rem;
+    padding-bottom: 16rem;
+    position: relative;
+
+    @media (max-width: 767px) {
+      margin-top: 9.6rem;
+      padding-bottom: 9.6rem;
+    }
+
+    &::after {
+      content: "";
+      width: 23.4rem;
+      height: 15.5rem;
+      background-image: url(../img/entry/cont/cont_obj.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      bottom: 0;
+      right: 31.6rem;
+
+      @media (max-width: 767px) {
+        width: 12rem;
+        height: 8rem;
+        right: 2rem;
+      }
+    }
+
+    &__inner {
+      width: 80rem;
+      margin: 0 auto;
+
+      @media (max-width: 767px) {
+        width: 100%;
+        padding: 0 2rem;
+      }
+    }
+
+    &__txt {
+      font-size: 2rem;
+      font-weight: 500;
+      line-height: 180%;
+      text-align: center;
+
+      @media (max-width: 767px) {
+        font-size: 1.6rem;
+      }
+    }
+
+    &__form {
+      margin-top: 8rem;
+
+      @media (max-width: 767px) {
+        margin-top: 4rem;
+      }
+    }
+
+    &__formblk {
+      &:not(:first-child) {
+        margin-top: 3.2rem;
+
+        @media (max-width: 767px) {
+          margin-top: 2.4rem;
+        }
+      }
+    }
+
+    &__label,
+    &__legend {
+      font-weight: 500;
+      line-height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: .8rem;
+    }
+
+    &__required {
+      color: $color-white;
+      font-size: 1.4rem;
+      background-color: $color-orange;
+      border-radius: .3rem;
+      padding: .3rem .55rem;
+
+      @media (max-width: 767px) {
+        font-size: 1.2rem;
+      }
+    }
+
+    &__inputarea {
+      width: 100%;
+      margin-top: .8rem;
+
+      @media (max-width: 767px) {
+        margin-top: .4rem;
+      }
+    }
+
+    &__default {
+      font-size: 1.8rem;
+      display: block;
+      width: 100%;
+      padding: 1.6rem;
+      border: solid 1px #D8D8D8;
+      border-radius: .5rem;
+      box-sizing: border-box;
+
+      @media (max-width: 767px) {
+        font-size: 1.4rem;
+        padding: .8rem;
+      }
+
+      &::placeholder {
+        color: #D8D8D8;
+      }
+
+      &--select {
+        appearance: none; /* 矢印を消す */
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background-image: url(../img/entry/cont/icon_serect-arrow.svg);
+        background-repeat: no-repeat;
+        background-size: 1.4rem auto;
+        background-position: right 2.4rem center;
+
+        @media (max-width: 767px) {
+          background-size: 1.2rem auto;
+          background-position: right 1.2rem center;
+        }
+      }
+    }
+
+    &__radio {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 4rem;
+      margin-top: .8rem;
+
+      input {
+        margin: unset;
+      }
+    }
+
+    &__btn-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 8rem;
+    }
+
+    &__btn {
+      position: relative;
+      transition: all .5s;
+      cursor: pointer;
+
+      &::after {
+        content: "";
+        width: 1.1rem;
+        height: 1.2rem;
+        background-image: url(../img/entry/cont/icon_arrow.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        top: 50%;
+        right: 2rem;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+      }
+
+      .c-btn__txt {
+        background-color: transparent;
+        border: unset;
+        padding: unset;
+        line-height: normal;
+        cursor: pointer;
+      }
+
+      &:hover {
+        opacity: .5;
+      }
+    }
+  }
+
+  .mw_wp_form.mw_wp_form_confirm {
+    .p-entry-cont__btn-wrap {
+      gap: 4rem;
+
+      @media (max-width: 767px) {
+        flex-direction: column;
+        gap: 2rem;
+      }
+    }
+
+    .p-entry-cont__btn--back {
+      color: #999999;
+      background-color: #D8D8D8;
+
+      &::after {
+        background-image: url(../img/entry/cont/icon_back-arrow.svg);
+        right: unset;
+        left: 2rem;
+      }
+    }
+  }
+
+  &__top-btn {
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 1.1rem;
+      height: 1.2rem;
+      background-image: url(../img/entry/cont/icon_arrow.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      top: 50%;
+      left: 2rem;
+      transform: translateY(-50%) scale(-1, -1);
+      -webkit-transform: translateY(-50%) scale(-1, -1);;
+      -ms-transform: translateY(-50%) scale(-1, -1);;
+    }
+  }
+}
