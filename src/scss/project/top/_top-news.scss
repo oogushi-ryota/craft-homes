@@ -1,0 +1,131 @@
+@use "foundation/variables" as *;
+
+.p-top-news {
+  & {
+    margin-top: 12rem;
+
+    @media (max-width: 767px) {
+      margin-top: 8rem;
+    }
+
+    &__ttl {
+      text-align: center;
+    }
+
+    &__inner {
+      width: 100rem;
+      margin: 0 auto;
+
+      @media (max-width: 767px) {
+        width: 100%;
+        padding: 0 2rem;
+      }
+    }
+
+    &__list {
+      margin-top: 4rem;
+
+      @media (max-width: 767px) {
+        margin-top: 3.2rem;
+      }
+    }
+
+    &__item {
+      padding: 0 1.2rem 2rem;
+      border-bottom: solid 1px #E6E8EC;
+
+      @media (max-width: 767px) {
+        padding: 0 .8rem 2rem;
+      }
+
+      &:not(:first-child) {
+        margin-top: 2rem;
+      }
+    }
+
+    &__link {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 2rem;
+
+      @media (max-width: 767px) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.6rem;
+      }
+
+      &:hover {
+        opacity: 1;
+
+        .p-top-news__item-ttl {
+          color: $color-orange;
+        }
+      }
+    }
+
+    &__link-head {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 2rem;
+
+      @media (max-width: 767px) {
+        gap: 1.2rem;
+      }
+    }
+
+    &__time {
+      color: $color-base;
+      font-weight: 400;
+      line-height: 100%;
+      letter-spacing: .02em;
+    }
+
+    &__tag {
+      color: $color-orange;
+      font-size: 1.6rem;
+      font-weight: 700;
+      line-height: 100%;
+      letter-spacing: .02em;
+      text-align: center;
+      background-color: #FFF4E8;
+      border-radius: .4rem;
+      min-width: 12rem;
+      padding: .6rem;
+
+      @media (max-width: 767px) {
+        font-size: 1.2rem;
+        min-width: 10rem;
+      }
+    }
+
+    &__item-ttl {
+      color: $color-base;
+      font-weight: 700;
+      line-height: 100%;
+      letter-spacing: .02em;
+      display: -webkit-inline-box;
+      overflow: hidden;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      transition: all .3s;
+
+      @media (max-width: 767px) {
+        line-height: 150%;
+        -webkit-line-clamp: 2;
+      }
+    }
+
+    &__btn-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 6.4rem;
+
+      @media (max-width: 767px) {
+        margin-top: 4rem;
+      }
+    }
+  }
+}

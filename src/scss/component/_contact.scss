@@ -1,0 +1,141 @@
+@use "foundation/variables" as *;
+
+.c-contact {
+  & {
+    margin-top: 12rem;
+
+    @media (max-width: 767px) {
+      margin-top: 8rem;
+    }
+
+    &__cont {
+      padding: 9.4rem 26rem;
+      background-image: url("../img/footer/bg.jpg");
+      background-size: cover;
+      background-position: center;
+      border-radius: 1.6rem;
+      position: relative;
+
+      @media (max-width: 767px) {
+        background-position: left;
+        padding: 2rem;
+      }
+
+      &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color: #50A186, $alpha: 1);
+        mix-blend-mode: darken; /* 暗さをプラス */
+        border-radius: 1.6rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+
+    &__ttl {
+      color: $color-white;
+      font-size: 3.6rem;
+      font-weight: 700;
+      line-height: 160%;
+      letter-spacing: .02em;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+
+      @media (max-width: 767px) {
+        font-size: 2rem;
+      }
+    }
+
+    &__btn-wrap {
+      margin-top: 3.6rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6rem;
+      position: relative;
+      z-index: 1;
+
+      @media (max-width: 767px) {
+        flex-direction: column;
+        margin-top: 2.4rem;
+        gap: 4rem;
+      }
+    }
+
+    &__btn {
+      color: $color-green;
+      font-size: 2.4rem;
+      font-weight: 700;
+      line-height: 100%;
+      background-color: $color-white;
+      padding: 2.4rem 4rem;
+      border-radius: 100vmax;
+      display: inline-flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: .8rem;
+
+      @media (max-width: 767px) {
+        font-size: 1.8rem;
+        width: 100%;
+        padding: 2.4rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    &__svg {
+      width: 2.9rem;
+      height: 2.2rem;
+
+      @media (max-width: 767px) {
+        width: 2.4rem;
+        height: 1.6rem;
+      }
+    }
+
+    &__tel {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    &__tel-head {
+      color: $color-white;
+      font-weight: 700;
+      line-height: 160%;
+    }
+
+    &__tel-link {
+      font-family: $font-en;
+      color: $color-white;
+      font-size: 3.2rem;
+      font-weight: 900;
+      line-height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: .2rem;
+
+      @media (max-width: 767px) {
+        font-size: 2.4rem;
+      }
+    }
+
+    &__tel-svg {
+      width: 2.5rem;
+      height: 4rem;
+
+      @media (max-width: 767px) {
+        width: 1.6rem;
+        height: 2.6rem;
+      }
+    }
+  }
+}

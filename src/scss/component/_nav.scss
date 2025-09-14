@@ -1,0 +1,49 @@
+@use "foundation/variables" as *;
+
+.c-nav {
+  & {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__logo {
+      display: inline-block;
+      width: 25.8rem;
+    }
+
+    &__list {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 4rem;
+    }
+
+    &__link {
+      color: $color-black;
+      font-size: 2.4rem;
+      font-weight: 700;
+      line-height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: .8rem;
+    }
+
+    &__contact {
+      
+    }
+
+    &__contact-btn {
+      color: $color-white;
+      padding: 2.4rem 4rem;
+      background-color: $color-green;
+      border-radius: 100vmax;
+    }
+
+    &__svg {
+      width: 2.9rem;
+      height: 2.2rem;
+    }
+  }
+}

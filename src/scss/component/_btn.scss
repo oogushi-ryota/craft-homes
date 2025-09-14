@@ -2,36 +2,39 @@
 
 .c-btn {
   & {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 26.8rem;
-    height: 5.6rem;
-    background-color: #0D8352;
+    color: $color-base;
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 100%;
+    display: inline-block;
+    padding: 2.4rem 8.2rem;
+    border: solid 2px $color-base;
     border-radius: 100vmax;
-    padding: 2rem 5rem;
     position: relative;
 
-    &__txt {
-      color: $color-white;
+    @media (max-width: 767px) {
       font-size: 1.8rem;
-      font-weight: 700;
-      line-height: 100%;
-
-      @media (max-width: 767px) {
-        font-size: 1.6rem;
-      }
+      width: 100%;
+      padding: 2.4rem 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     &__svg {
-      width: 1.1rem;
-      height: 1.2rem;
+      width: 2.4rem;
+      height: 1.7rem;
       position: absolute;
       top: 50%;
-      right: 2rem;
+      right: 1.8rem;
       transform: translateY(-50%);
       -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
+
+      @media (max-width: 767px) {
+        width: 1.9rem;
+        height: 1.2rem;
+      }
     }
   }
 }

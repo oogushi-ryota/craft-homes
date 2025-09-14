@@ -7,72 +7,49 @@
 @use "layout/main";
 @use "layout/footer";
 @use "layout/header";
-@use "layout/top-section";
 
 // Component
-@use "component/entry";
-@use "component/ttl";
+@use "component/nav";
+@use "component/contact";
 @use "component/inner";
-@use "component/top-ttl";
 @use "component/btn";
-@use "component/faq-list";
+@use "component/sec-ttl";
+
 @use "component/breadcrumb";
 @use "component/under-fv";
-@use "component/sec-ttl";
-@use "component/sec-anchor";
 @use "component/color";
-@use "component/tab";
 
 // Project
 // トップページ
 @use "project/top/top-fv";
-@use "project/top/top-philosophy";
+@use "project/top/top-lead";
+@use "project/top/top-points";
+@use "project/top/top-service";
 @use "project/top/top-about";
-@use "project/top/top-working";
-@use "project/top/top-schedule";
-@use "project/top/top-wellbeing";
-@use "project/top/top-interview";
-@use "project/top/top-lifework";
-@use "project/top/top-faq";
+@use "project/top/top-news";
 
 // 理念・保育方針
 @use "project/philosophy/philosophy-fv";
-@use "project/philosophy/philosophy-section";
-@use "project/philosophy/philosophy-policy";
-@use "project/philosophy/philosophy-goal";
 
 // 園の概要・施設紹介
 @use "project/about/about-fv";
-@use "project/about/about-outline";
-@use "project/about/about-history";
-@use "project/about/about-facility";
 
 // 園の1日・年間行事
 @use "project/schedule/schedule-fv";
-@use "project/schedule/schedule-day";
-@use "project/schedule/schedule-year";
 
 // 安全・健康への取り組み
 @use "project/wellbeing/wellbeing-fv";
-@use "project/wellbeing/wellbeing-cont";
 
 // 福利厚生・待遇
-@use "project/benefits/benefits-fv";
-@use "project/benefits/benefits-details";
-@use "project/benefits/benefits-job";
 
 // 研修制度・キャリアパス
 @use "project/career/career-fv";
-@use "project/career/career-training";
-@use "project/career/career-careerpath";
 
 // ライフワークバランス
 @use "project/lifework/lifework-fv";
-@use "project/lifework/lifework-flow";
 
 // 職員インタビュー_一覧
 @use "project/interview/interview-fv";
-@use "project/interview/interview-archive";
 
 // 職員インタビュー_詳細
 @use "project/single/interview-details";
@@ -82,7 +59,6 @@
 
 // エントリー
 @use "project/entry/entry-fv";
-@use "project/entry/entry-cont";
 
 // animation
 @use "animation/js-accordion";
@@ -91,4 +67,3 @@
 // Utility
 @use "utility/responsive.scss";
 @use "utility/txt";
-@use "utility/txt-bg";

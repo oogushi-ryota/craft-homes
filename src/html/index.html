@@ -18,31 +18,307 @@
   <link rel="stylesheet" href="./assets/css/style.min.css">
 
   <!-- フォント読み込み -->
-  <script>
-    (function(d) {
-      var config = {
-        kitId: 'qwv3pbk',
-        scriptTimeout: 3000,
-        async: true
-      },
-      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-    })(document);
-  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body class="p-top">
   <header class="l-header">
     <div class="l-header__inner">
-      
+      <div class="l-header__nav c-nav">
+        <a href="" class="l-header__logo c-nav__logo">
+          <img src="assets/img/common/logo.svg" alt="クラフトホームズのロゴ">
+        </a>
+        <nav class="c-nav__nav js-nav">
+          <ul class="l-header__list c-nav__list">
+            <li class="l-header__item c-nav__item">
+              <a href="" class="l-header__link c-nav__link">外装リフォーム</a>
+            </li>
+            <li class="l-header__item c-nav__item">
+              <a href="" class="l-header__link c-nav__link">内装リフォーム</a>
+            </li>
+            <li class="l-header__item c-nav__item">
+              <a href="" class="l-header__link c-nav__link">新着情報</a>
+            </li>
+            <li class="l-header__item c-nav__item">
+              <a href="" class="l-header__link c-nav__link">会社概要</a>
+            </li>
+            <li class="l-header__item l-header__contact c-nav__item c-nav__contact">
+              <a href="" class="l-header__link l-header__contact-btn c-nav__link c-nav__contact-btn">
+                <svg class="l-header__svg c-nav__svg" width="29" height="22" viewBox="0 0 29 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M25.4324 0H3.03242C1.49242 0 0.232422 1.2375 0.232422 2.75V19.25C0.232422 20.7625 1.49242 22 3.03242 22H25.4324C26.9724 22 28.2324 20.7625 28.2324 19.25V2.75C28.2324 1.2375 26.9724 0 25.4324 0ZM24.8724 5.84375L15.7164 11.4675C14.8064 12.0313 13.6584 12.0313 12.7484 11.4675L3.59242 5.84375C3.45204 5.76635 3.32911 5.66178 3.23107 5.53637C3.13302 5.41096 3.06191 5.26732 3.02203 5.11413C2.98215 4.96095 2.97433 4.80141 2.99904 4.64517C3.02376 4.48893 3.08049 4.33924 3.16582 4.20516C3.25114 4.07108 3.36328 3.9554 3.49544 3.86512C3.6276 3.77483 3.77704 3.71183 3.93472 3.67991C4.09239 3.64799 4.25502 3.64783 4.41276 3.67943C4.5705 3.71103 4.72007 3.77373 4.85242 3.86375L14.2324 9.625L23.6124 3.86375C23.7448 3.77373 23.8943 3.71103 24.0521 3.67943C24.2098 3.64783 24.3725 3.64799 24.5301 3.67991C24.6878 3.71183 24.8372 3.77483 24.9694 3.86512C25.1016 3.9554 25.2137 4.07108 25.299 4.20516C25.3844 4.33924 25.4411 4.48893 25.4658 4.64517C25.4905 4.80141 25.4827 4.96095 25.4428 5.11413C25.4029 5.26732 25.3318 5.41096 25.2338 5.53637C25.1357 5.66178 25.0128 5.76635 24.8724 5.84375Z" fill="white"/>
+                </svg>
+                お問い合わせ
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="l-header__hamburger js-nav-btn">
+          <span class="l-header__hamburger-line"></span>
+          <span class="l-header__hamburger-line"></span>
+          <span class="l-header__hamburger-line"></span>
+        </div>
+      </div>
     </div>
   </header>
 
   <main class="l-main">
-    
+    <section class="p-top-fv">
+      <div class="p-top-fv__bg"></div>
+    </section>
+
+    <section class="p-top-lead">
+      <div class="c-inner">
+        <div class="p-top-lead__cont">
+          <h2 class="p-top-lead__ttl">
+            大切な住まいを、<br>
+            これからも安心・快適に。
+          </h2>
+          <p class="p-top-lead__txt">
+            積み重ねた経験と技術で、日々の暮らしを支え、住まいの未来を育む。<br>
+            小さな不安も見逃さず、安心と快適を届けます。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="p-top-points">
+      <div class="p-top-points__inner">
+        <h2 class="p-top-points__ttl">
+          安心してお任せいただける<br>
+          <span class="p-top-points__l-ttl">3つのポイント</span>
+        </h2>
+        <ol class="p-top-points__list">
+          <li class="p-top-points__item">
+            <div class="p-top-points__txtarea">
+              <span class="p-top-points__num">01</span>
+              <h3 class="p-top-points__item-ttl">地域密着・お客様第一</h3>
+              <p class="p-top-points__item-txt">地域に根ざし、住まいを支え続けています。</p>
+            </div>
+            <picture class="p-top-points__img">
+              <source srcset="assets/img/top/points/points_img01.webp" type="image/webp">
+              <img src="assets/img/top/points/points_img01.jpg" width="936" height="450" alt="地域密着・お客様第一">
+            </picture>
+          </li>
+          <li class="p-top-points__item">
+            <div class="p-top-points__txtarea">
+              <span class="p-top-points__num">02</span>
+              <h3 class="p-top-points__item-ttl">中間マージンなしで適正価格</h3>
+              <p class="p-top-points__item-txt">自社施工で、適正価格を実現します。</p>
+            </div>
+            <picture class="p-top-points__img">
+              <source srcset="assets/img/top/points/points_img02.webp" type="image/webp">
+              <img src="assets/img/top/points/points_img02.jpg" width="936" height="450" alt="中間マージンなしで適正価格">
+            </picture>
+          </li>
+          <li class="p-top-points__item">
+            <div class="p-top-points__txtarea">
+              <span class="p-top-points__num">03</span>
+              <h3 class="p-top-points__item-ttl">確かな技術と実績</h3>
+              <p class="p-top-points__item-txt">
+                豊富な実績と職人の技術で、理想の住まいを実現します。
+              </p>
+            </div>
+            <picture class="p-top-points__img">
+              <source srcset="assets/img/top/points/points_img03.webp" type="image/webp">
+              <img src="assets/img/top/points/points_img03.jpg" width="936" height="450" alt="中間マージンなしで適正価格">
+            </picture>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="p-top-service">
+      <div class="c-inner">
+        <h2 class="c-sec-ttl">サービス</h2>
+        <p class="p-top-service__txt">
+          日々の暮らしを快適に、そして未来へ安心をつなぐために、外装から内装まで幅広いリフォームに対応。<br>
+          屋根・外壁・ベランダ・外構から、キッチン・浴室・トイレまで、確かな施工で住まいを守り続けます。
+        </p>
+        <div class="p-top-service__cont">
+          <a href="" class="p-top-service__link p-top-service__link--exterior">
+            <h3 class="p-top-service__cont-ttl">外装リフォーム</h3>
+            <span class="p-top-service__hover-btn">
+              詳しく見る
+              <svg class="p-top-service__hover-svg" width="19" height="13" viewBox="0 0 19 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.4919 12.5505C11.8266 12.8686 12.3692 12.8685 12.704 12.5505L18.1591 7.36513C18.4938 7.04694 18.4938 6.53118 18.1591 6.21299L12.704 1.02758C12.3692 0.709638 11.8266 0.709476 11.4919 1.02758C11.1573 1.34569 11.1575 1.86151 11.4919 2.17972L15.4839 5.97429L1.2673 5.97429C0.793914 5.97429 0.410156 6.33908 0.410156 6.78906C0.410156 7.23905 0.793914 7.60383 1.2673 7.60383L15.4839 7.60383L11.4919 11.3984C11.1575 11.7166 11.1573 12.2324 11.4919 12.5505Z" fill="white"/>
+              </svg>
+            </span>
+          </a>
+          <a href="" class="p-top-service__link p-top-service__link--interior">
+            <h3 class="p-top-service__cont-ttl">内装リフォーム</h3>
+            <span class="p-top-service__hover-btn">
+              詳しく見る
+              <svg class="p-top-service__hover-svg" width="19" height="13" viewBox="0 0 19 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.4919 12.5505C11.8266 12.8686 12.3692 12.8685 12.704 12.5505L18.1591 7.36513C18.4938 7.04694 18.4938 6.53118 18.1591 6.21299L12.704 1.02758C12.3692 0.709638 11.8266 0.709476 11.4919 1.02758C11.1573 1.34569 11.1575 1.86151 11.4919 2.17972L15.4839 5.97429L1.2673 5.97429C0.793914 5.97429 0.410156 6.33908 0.410156 6.78906C0.410156 7.23905 0.793914 7.60383 1.2673 7.60383L15.4839 7.60383L11.4919 11.3984C11.1575 11.7166 11.1573 12.2324 11.4919 12.5505Z" fill="white"/>
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="p-top-about">
+      <div class="p-top-about__inner">
+        <div class="p-top-about__cont">
+          <picture class="p-top-about__img">
+            <source srcset="assets/img/top/about/about_img.webp" type="image/webp">
+            <img src="assets/img/top/about/about_img.jpg" width="886" height="800" alt="会社概要">
+          </picture>
+          <div class="p-top-about__txtarea">
+            <h2 class="p-top-about__ttl c-sec-ttl">会社概要</h2>
+            <span class="p-top-about__sub-ttl">クラフトホームズについて</span>
+            <p class="p-top-about__txt">
+              クラフトホームズは、屋根・外壁のリフォームをはじめ、防水工事や雨樋工事など住まいを守る工事に幅広く対応しています。<br>
+              また、新築・増改築・内装・店舗工事など建築全般を手掛け、地域に根ざした総合建設業として信頼をいただいています。
+            </p>
+            <div class="p-top-about__btn-wrap">
+              <a href="" class="c-btn">
+                会社概要を見る
+                <svg class="c-btn__svg" width="24" height="17" viewBox="0 0 19 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.3142 11.7615C11.6489 12.0796 12.1915 12.0794 12.5263 11.7615L17.9814 6.57607C18.3161 6.25788 18.3161 5.74212 17.9814 5.42393L12.5263 0.238521C12.1915 -0.079425 11.6489 -0.0795861 11.3142 0.238521C10.9796 0.556628 10.9797 1.07245 11.3142 1.39066L15.3061 5.18523L1.08957 5.18523C0.616179 5.18523 0.232422 5.55002 0.232422 6C0.232422 6.44999 0.616179 6.81477 1.08957 6.81477L15.3061 6.81477L11.3142 10.6093C10.9797 10.9275 10.9796 11.4434 11.3142 11.7615Z" fill="#313131"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="p-top-news">
+      <div class="p-top-news__inner">
+        <h2 class="p-top-news__ttl c-sec-ttl">新着情報</h2>
+        <ul class="p-top-news__list">
+          <li class="p-top-news__item">
+            <a href="" class="p-top-news__link">
+              <span class="p-top-news__link-head">
+                <time datetime="2025.00.00" class="p-top-news__time">2025.00.00</time>
+                <span class="p-top-news__tag">カテゴリ</span>
+              </span>
+              <h3 class="p-top-news__item-ttl">記事のタイトルが入ります。記事のタイトルが入ります。</h3>
+            </a>
+          </li>
+          <li class="p-top-news__item">
+            <a href="" class="p-top-news__link">
+              <span class="p-top-news__link-head">
+                <time datetime="2025.00.00" class="p-top-news__time">2025.00.00</time>
+                <span class="p-top-news__tag">カテゴリ</span>
+              </span>
+              <h3 class="p-top-news__item-ttl">記事のタイトルが入ります。記事のタイトルが入ります。記事のタイトルが入ります。記事のタイトルが入ります。記事のタイトルが入ります。記事のタイトルが入ります。記事のタイトルが入ります。記事のタイトルが入ります。</h3>
+            </a>
+          </li>
+          <li class="p-top-news__item">
+            <a href="" class="p-top-news__link">
+              <span class="p-top-news__link-head">
+                <time datetime="2025.00.00" class="p-top-news__time">2025.00.00</time>
+                <span class="p-top-news__tag">カテゴリ</span>
+              </span>
+              <h3 class="p-top-news__item-ttl">記事のタイトルが入ります。記事のタイトルが入ります。記事のタイトルが入ります。記事のタイトルが入ります。記事のタイトルが入ります。記事のタイトルが入ります。記事のタイトルが入ります。記事のタイトルが入ります。</h3>
+            </a>
+          </li>
+        </ul>
+        <div class="p-top-news__btn-wrap">
+          <a href="" class="c-btn">
+            新着情報一覧を見る
+            <svg class="c-btn__svg" width="24" height="17" viewBox="0 0 19 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.3142 11.7615C11.6489 12.0796 12.1915 12.0794 12.5263 11.7615L17.9814 6.57607C18.3161 6.25788 18.3161 5.74212 17.9814 5.42393L12.5263 0.238521C12.1915 -0.079425 11.6489 -0.0795861 11.3142 0.238521C10.9796 0.556628 10.9797 1.07245 11.3142 1.39066L15.3061 5.18523L1.08957 5.18523C0.616179 5.18523 0.232422 5.55002 0.232422 6C0.232422 6.44999 0.616179 6.81477 1.08957 6.81477L15.3061 6.81477L11.3142 10.6093C10.9797 10.9275 10.9796 11.4434 11.3142 11.7615Z" fill="#313131"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="c-contact">
+      <div class="c-inner">
+        <div class="c-contact__cont">
+          <h2 class="c-contact__ttl">
+            大切な住まいを、これからも安心・快適に。<br>
+            確かな技術と実績で最適なリフォームをご提案します。
+          </h2>
+          <div class="c-contact__btn-wrap">
+            <a href="" class="c-contact__btn">
+              <svg class="c-contact__svg" width="29" height="22" viewBox="0 0 29 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M25.4324 0H3.03242C1.49242 0 0.232422 1.2375 0.232422 2.75V19.25C0.232422 20.7625 1.49242 22 3.03242 22H25.4324C26.9724 22 28.2324 20.7625 28.2324 19.25V2.75C28.2324 1.2375 26.9724 0 25.4324 0ZM24.8724 5.84375L15.7164 11.4675C14.8064 12.0313 13.6584 12.0313 12.7484 11.4675L3.59242 5.84375C3.45204 5.76635 3.32911 5.66178 3.23107 5.53637C3.13302 5.41096 3.06191 5.26732 3.02203 5.11413C2.98215 4.96095 2.97433 4.80141 2.99904 4.64517C3.02376 4.48893 3.08049 4.33924 3.16582 4.20516C3.25114 4.07108 3.36328 3.9554 3.49544 3.86512C3.6276 3.77483 3.77704 3.71183 3.93472 3.67991C4.09239 3.64799 4.25502 3.64783 4.41276 3.67943C4.5705 3.71103 4.72007 3.77373 4.85242 3.86375L14.2324 9.625L23.6124 3.86375C23.7448 3.77373 23.8943 3.71103 24.0521 3.67943C24.2098 3.64783 24.3725 3.64799 24.5301 3.67991C24.6878 3.71183 24.8372 3.77483 24.9694 3.86512C25.1016 3.9554 25.2137 4.07108 25.299 4.20516C25.3844 4.33924 25.4411 4.48893 25.4658 4.64517C25.4905 4.80141 25.4827 4.96095 25.4428 5.11413C25.4029 5.26732 25.3318 5.41096 25.2338 5.53637C25.1357 5.66178 25.0128 5.76635 24.8724 5.84375Z" fill="#0E7B3B"/>
+              </svg>
+              お問い合わせ
+            </a>
+            <div class="c-contact__tel">
+              <span class="c-contact__tel-head">お電話でのお問い合わせはこちら</span>
+              <a href="tel:01201234567" class="c-contact__tel-link">
+                <svg class="c-contact__tel-svg" width="25" height="40" viewBox="0 0 25 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20.8577 0H4.85767C3.7968 0 2.77938 0.421427 2.02924 1.17157C1.27909 1.92172 0.857666 2.93913 0.857666 4V36C0.857666 37.0609 1.27909 38.0783 2.02924 38.8284C2.77938 39.5786 3.7968 40 4.85767 40H20.8577C21.9185 40 22.9359 39.5786 23.6861 38.8284C24.4362 38.0783 24.8577 37.0609 24.8577 36V4C24.8577 2.93913 24.4362 1.92172 23.6861 1.17157C22.9359 0.421427 21.9185 0 20.8577 0ZM14.8577 38H10.8577V36H14.8577V38ZM20.8577 34H4.85767V6H20.8577V34Z" fill="white"/>
+                </svg>
+                0120-123-4567
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="l-footer">
-    
+    <div class="c-inner">
+      <div class="l-footer__head">
+        <div class="l-footer__nav c-nav">
+          <a href="" class="l-footer__nav-logo c-nav__logo">
+            <img src="assets/img/common/logo.svg" alt="クラフトホームズのロゴ">
+          </a>
+          <nav class="l-footer__nav-nav c-nav__nav">
+            <ul class="l-footer__nav-list c-nav__list">
+              <li class="l-footer__nav-item c-nav__item">
+                <a href="" class="l-footer__nav-link c-nav__link">外装リフォーム</a>
+              </li>
+              <li class="l-footer__nav-item c-nav__item">
+                <a href="" class="l-footer__nav-link c-nav__link">内装リフォーム</a>
+              </li>
+              <li class="l-footer__nav-item c-nav__item">
+                <a href="" class="l-footer__nav-link c-nav__link">新着情報</a>
+              </li>
+              <li class="l-footer__nav-item c-nav__item">
+                <a href="" class="l-footer__nav-link c-nav__link">会社概要</a>
+              </li>
+              <li class="l-footer__nav-item c-nav__item c-nav__contact l-footer__nav-contact">
+                <a href="" class="l-footer__nav-link l-footer__nav-contact-btn c-nav__link c-nav__contact-btn">
+                  <svg class="l-footer__svg c-nav__svg" width="29" height="22" viewBox="0 0 29 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M25.4324 0H3.03242C1.49242 0 0.232422 1.2375 0.232422 2.75V19.25C0.232422 20.7625 1.49242 22 3.03242 22H25.4324C26.9724 22 28.2324 20.7625 28.2324 19.25V2.75C28.2324 1.2375 26.9724 0 25.4324 0ZM24.8724 5.84375L15.7164 11.4675C14.8064 12.0313 13.6584 12.0313 12.7484 11.4675L3.59242 5.84375C3.45204 5.76635 3.32911 5.66178 3.23107 5.53637C3.13302 5.41096 3.06191 5.26732 3.02203 5.11413C2.98215 4.96095 2.97433 4.80141 2.99904 4.64517C3.02376 4.48893 3.08049 4.33924 3.16582 4.20516C3.25114 4.07108 3.36328 3.9554 3.49544 3.86512C3.6276 3.77483 3.77704 3.71183 3.93472 3.67991C4.09239 3.64799 4.25502 3.64783 4.41276 3.67943C4.5705 3.71103 4.72007 3.77373 4.85242 3.86375L14.2324 9.625L23.6124 3.86375C23.7448 3.77373 23.8943 3.71103 24.0521 3.67943C24.2098 3.64783 24.3725 3.64799 24.5301 3.67991C24.6878 3.71183 24.8372 3.77483 24.9694 3.86512C25.1016 3.9554 25.2137 4.07108 25.299 4.20516C25.3844 4.33924 25.4411 4.48893 25.4658 4.64517C25.4905 4.80141 25.4827 4.96095 25.4428 5.11413C25.4029 5.26732 25.3318 5.41096 25.2338 5.53637C25.1357 5.66178 25.0128 5.76635 24.8724 5.84375Z" fill="white"/>
+                  </svg>
+                  お問い合わせ
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="l-footer__other-nav">
+          <ul class="l-footer__other-nav-list">
+            <li class="l-footer__other-nav-item">
+              <a href="" class="l-footer__other-nav-link">
+                企業サイト
+                <svg class="l-footer__nav-svg" width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1560_1154)">
+                <path d="M3.74707 0V12.1875H16.7471V0H3.74707ZM15.4971 11.0156H4.99707V1.17188H15.4971V11.0156Z" fill="#313131"/>
+                <path d="M1.99707 13.8281V8.67188V3.98438V2.8125H0.74707V15H13.7471V13.8281H12.4971H1.99707Z" fill="#313131"/>
+                <path d="M8.02343 9.16038L11.7065 5.70745V8.19174H12.9565V3.70703H8.17287V4.87891H10.8227L7.13965 8.33181L8.02343 9.16038Z" fill="#313131"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_1560_1154">
+                <rect width="16" height="15" fill="white" transform="translate(0.74707)"/>
+                </clipPath>
+                </defs>
+                </svg>
+              </a>
+            </li>
+            <li class="l-footer__other-nav-item">
+              <a href="" class="l-footer__other-nav-link">
+                プライバシーポリシー
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <small class="l-footer__small">© 2025 Copyright Craft Homes 10206 Pearson Ave, Orlando, FL 32827</small>
+    </div>
   </footer>
 
   <script type="module" src="assets/js/main.min.js?250711"></script>

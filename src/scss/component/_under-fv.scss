@@ -42,7 +42,7 @@
     }
 
     &__en {
-      color: $color-orange;
+      
       font-family: $font-en;
       font-size: 1.4rem;
       font-weight: 600;
@@ -58,7 +58,7 @@
         content: "";
         width: .8rem;
         height: .8rem;
-        background-color: $color-orange;
+        
         border-radius: 100vmax;
         position: absolute;
         top: 50%;

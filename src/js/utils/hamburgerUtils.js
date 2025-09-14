@@ -4,7 +4,7 @@ import $ from "jquery";
 export function initHamburgerMenu({
   navSelector = ".js-nav",
   btnSelector = ".js-nav-btn",
-  closeTargetSelector = ".l-header__nav-item a",
+  closeTargetSelector = ".l-header__item a",
   extraTargets = [],
   lenisInstance = null,
 } = {}) {
