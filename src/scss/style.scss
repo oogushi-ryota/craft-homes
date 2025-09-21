@@ -15,9 +15,11 @@
 @use "component/btn";
 @use "component/sec-ttl";
 
+@use "component/color";
 @use "component/breadcrumb";
 @use "component/under-fv";
-@use "component/color";
+@use "component/under-ttl";
+@use "component/under-sec-ttl";
 
 // Project
 // トップページ
@@ -27,6 +29,15 @@
 @use "project/top/top-service";
 @use "project/top/top-about";
 @use "project/top/top-news";
+
+// 外装りフォーム・内装りフォーム
+@use "project/reform/reform-lead";
+@use "project/reform/reform-reason";
+@use "project/reform/reform-feature";
+
+
+
+
 
 // 理念・保育方針
 @use "project/philosophy/philosophy-fv";
@@ -39,11 +50,6 @@
 
 // 安全・健康への取り組み
 @use "project/wellbeing/wellbeing-fv";
-
-// 福利厚生・待遇
-
-// 研修制度・キャリアパス
-@use "project/career/career-fv";
 
 // ライフワークバランス
 @use "project/lifework/lifework-fv";

@@ -1,0 +1,42 @@
+@use "foundation/variables" as *;
+
+.c-under-ttl {
+  & {
+    height: 100%;
+    padding-top: 35.5rem;
+    position: relative;
+    z-index: 2;
+
+    @media (max-width: 767px) {
+      padding-top: unset;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    &__en {
+      font-family: $font-en;
+      color: $color-white;
+      font-size: 3.2rem;
+      font-weight: 700;
+      line-height: 160%;
+      letter-spacing: .05em;
+
+      @media (max-width: 767px) {
+        font-size: 1.8rem;
+      }
+    }
+
+    &__ja {
+      color: $color-white;
+      font-size: 6.4rem;
+      font-weight: 700;
+      letter-spacing: .05em;
+      line-height: 160%;
+
+      @media (max-width: 767px) {
+        font-size: 4rem;
+      }
+    }
+  }
+}

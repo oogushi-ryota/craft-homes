@@ -1,0 +1,14 @@
+@use "foundation/variables" as *;
+
+.c-under-sec-ttl {
+  & {
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 150%;
+    text-align: center;
+
+    @media (max-width: 767px) {
+      font-size: 2.4rem;
+    }
+  }
+}
