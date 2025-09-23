@@ -37,15 +37,16 @@
 @use "project/reform/reform-variation";
 @use "project/reform/reform-afterservice";
 
+// 会社概要
+@use "project/about/about-lead";
+@use "project/about/about-company";
+
 
 
 
 
 // 理念・保育方針
 @use "project/philosophy/philosophy-fv";
-
-// 園の概要・施設紹介
-@use "project/about/about-fv";
 
 // 園の1日・年間行事
 @use "project/schedule/schedule-fv";
