@@ -1,0 +1,152 @@
+@use "foundation/variables" as *;
+
+.p-reform-afterservice {
+  & {
+    margin-top: 36rem;
+    position: relative;
+
+    @media (max-width: 767px) {
+      margin-top: 20rem;
+    }
+
+    &::before {
+      content: "";
+      width: 100%;
+      height: 45rem;
+      background-image: url(../img/common/reform_bg.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      top: -24rem;
+      left: 0;
+      z-index: -1;
+
+      @media (max-width: 767px) {
+        height: 30rem;
+        top: -12rem;
+      }
+    }
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 45rem;
+      background-color: rgba($color: #000000, $alpha: .4);
+      position: absolute;
+      top: -24rem;
+      left: 0;
+      z-index: -1;
+
+      @media (max-width: 767px) {
+        height: 30rem;
+        top: -12rem;
+      }
+    }
+
+    &__cont {
+      width: 100%;
+      height: 33.4rem;
+      background-color: $color-white;
+      border-radius: 2.4rem;
+      padding-top: 15.6rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+
+      @media (max-width: 767px) {
+        height: auto;
+        padding: 8rem 2rem 2rem;
+        border-radius: 1.2rem;
+      }
+
+      &::before {
+        content: "";
+        width: 22.8rem;
+        height: 26.2rem;
+        background-image: url(../img/common/reform_badge.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        top: -14.6rem;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+
+        @media (max-width: 767px) {
+          width: 10rem;
+          height: 11.5rem;
+          top: -5rem;
+        }
+      }
+    }
+
+    &__ttlarea {
+      position: relative;
+
+      &::before,
+      &::after {
+        content: "";
+        width: 5.8rem;
+        height: 13.8rem;
+        background-image: url(../img/common/reform_obj.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+
+        @media (max-width: 767px) {
+          width: 3.2rem;
+          height: 7.6rem;
+          top: 56%;
+        }
+      }
+
+      &::before {
+        transform: translateY(-50%) scale(-1, 1);
+        -webkit-transform: translateY(-50%) scale(-1, 1);
+        -ms-transform: translateY(-50%) scale(-1, 1);
+        left: -8.2rem;
+
+        @media (max-width: 767px) {
+          left: -1rem;
+        }
+      }
+
+      &::after {
+        right: -8.2rem;
+
+        @media (max-width: 767px) {
+          right: -1rem;
+        }
+      }
+    }
+
+    &__ttl {
+      font-size: 3.6rem;
+      font-weight: 700;
+      line-height: 100%;
+      text-align: center;
+
+      @media (max-width: 767px) {
+        font-size: 2.4rem;
+      }
+    }
+
+    &__txt {
+      font-weight: 700;
+      line-height: 180%;
+      margin-top: 2.8rem;
+      text-align: center;
+
+      @media (max-width: 767px) {
+        margin-top: 2.4rem;
+        padding: 0 3.2rem;
+      }
+    }
+  }
+}
