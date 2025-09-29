@@ -1,0 +1,135 @@
+@use "foundation/variables" as *;
+
+.p-news-archive {
+  & {
+    margin-top: 6rem;
+
+    @media (max-width: 767px) {
+      margin-top: 4rem;
+    }
+
+    &__item {
+      border-bottom: solid 1px #E6E8EC;
+      padding: 2.4rem 0;
+
+      @media (max-width: 767px) {
+        padding: 2rem 0;
+      }
+    }
+
+    &__link {
+      color: $color-base;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 2.4rem;
+
+      @media (max-width: 767px) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.6rem;
+      }
+
+      &:hover {
+        opacity: 1;
+
+        .p-news-archive__item-ttl {
+          color: $color-orange;
+        }
+      }
+    }
+
+    &__link-head {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 2.4rem;
+
+      @media (max-width: 767px) {
+        gap: 1.2rem;
+      }
+    }
+
+    &__time {
+      font-size: 2.2rem;
+      font-weight: 400;
+      line-height: 160%;
+      letter-spacing: .02em;
+
+      @media (max-width: 767px) {
+        font-size: 1.4rem;
+      }
+    }
+
+    &__tag {
+      color: $color-orange;
+      font-size: 2.2rem;
+      font-weight: 700;
+      line-height: 100%;
+      letter-spacing: .02em;
+      background-color: #fff4e8;
+      border-radius: .6rem;
+      padding: .8rem 2.8rem;
+
+      @media (max-width: 767px) {
+        font-size: 1.4rem;
+        padding: .6rem 1.6rem;
+      }
+    }
+
+    &__item-ttl {
+      font-size: 2.2rem;
+      font-weight: 700;
+      line-height: 160%;
+      letter-spacing: .02em;
+      display: -webkit-inline-box;
+      overflow: hidden;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      transition: all .3s;
+
+      @media (max-width: 767px) {
+        font-size: 1.6rem;
+      }
+    }
+
+    &__pagination {
+      margin-top: 5.6rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+
+      @media (max-width: 767px) {
+        gap: 1.6rem;
+      }
+
+      .page-numbers {
+        color: $color-base;
+        font-size: 2.4rem;
+        width: 5rem;
+        height: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+
+        @media (max-width: 767px) {
+          font-size: 1.8rem;
+          width: 2.4rem;
+          height: 2.4rem;
+        }
+
+        &.current {
+          color: $color-orange;
+        }
+
+        &.prev,
+        &.next {
+          width: auto;
+          height: auto;
+        }
+      }
+    }
+  }
+}

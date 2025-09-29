@@ -9,7 +9,8 @@
     position: relative;
 
     @media (max-width: 767px) {
-      height: 100vh;
+      height: 40rem;
+      background-position: center;
     }
 
     &::before {
@@ -28,6 +29,10 @@
 
     &--interior {
       background-image: url(../img/interior/fv/fv.jpg);
+    }
+
+    &--news {
+      background-image: url(../img/news/fv/fv.jpg);
     }
   }
 }
