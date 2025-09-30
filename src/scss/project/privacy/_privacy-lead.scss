@@ -1,0 +1,21 @@
+@use "foundation/variables" as *;
+
+.p-privacy-lead {
+  & {
+    margin-top: 12rem;
+
+    @media (max-width: 767px) {
+      margin-top: 8rem;
+    }
+
+    &__txt {
+      font-size: 2rem;
+      font-weight: 500;
+      line-height: 180%;
+
+      @media (max-width: 767px) {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}

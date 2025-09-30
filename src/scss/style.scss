@@ -46,6 +46,9 @@
 @use "project/news/news-archive";
 @use "project/news/news-details";
 
+// プライバシーポリシー
+@use "project/privacy/privacy-lead";
+@use "project/privacy/privacy-details";
 
 
 
@@ -57,9 +60,6 @@
 
 // 安全・健康への取り組み
 @use "project/wellbeing/wellbeing-fv";
-
-// ライフワークバランス
-@use "project/lifework/lifework-fv";
 
 
 // よくあるご質問
