@@ -50,23 +50,8 @@
 @use "project/privacy/privacy-lead";
 @use "project/privacy/privacy-details";
 
-
-
-// 理念・保育方針
-@use "project/philosophy/philosophy-fv";
-
-// 園の1日・年間行事
-@use "project/schedule/schedule-fv";
-
-// 安全・健康への取り組み
-@use "project/wellbeing/wellbeing-fv";
-
-
-// よくあるご質問
-@use "project/faq/faq";
-
-// エントリー
-@use "project/entry/entry-fv";
+// お問い合わせ
+@use "project/contact/contact-form";
 
 // animation
 @use "animation/js-accordion";
