@@ -98,7 +98,7 @@ function my_mwform_custom_shortcode( $shortcode, $atts, $content, $form_key ) {
 	}
 	return $shortcode;
 }
-add_filter( 'フォームキー', 'my_mwform_custom_shortcode', 10, 4 );
+add_filter( 'mwform_shortcode_mw-wp-form-27', 'my_mwform_custom_shortcode', 10, 4 );
 
 // 404ページをトップにリダイレクト
 add_action('template_redirect', function() {

@@ -149,6 +149,29 @@
         @media (max-width: 767px) {
           gap: 2.4rem;
         }
+
+        .mwform-checkbox-field {
+          label {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: .8rem;
+
+            @media (max-width: 767px) {
+              gap: .4rem;
+            }
+          }
+
+          input {
+            width: auto;
+            height: auto;
+            margin: unset;
+
+            &[type="checkbox"] {
+              accent-color: $color-green;
+            }
+          }
+        }
       }
     }
 
@@ -156,52 +179,19 @@
       line-height: 100%;
     }
 
-    &__checkbox {
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      gap: .8rem;
-
-      @media (max-width: 767px) {
-        gap: .4rem;
-      }
-
-      input {
-        width: auto;
-        height: auto;
-
-        &[type="checkbox"] {
-          accent-color: $color-green;
-        }
-      }
-    }
-
     &__btn-wrap {
-      margin-top: 5.6rem;
+      width: fit-content;
+      margin: 5.6rem auto 0;
       display: flex;
       align-items: center;
       justify-content: center;
-
-      @media (max-width: 767px) {
-        margin-top: 4rem;
-      }
-    }
-
-    &__btn {
-      color: $color-white;
-      font-size: 2.2rem;
-      font-weight: 700;
-      line-height: 100%;
-      width: 32rem;
-      height: 7rem;
-      background-color: $color-green;
-      border-radius: 100vmax;
+      gap: 4rem;
       position: relative;
 
       @media (max-width: 767px) {
-        font-size: 1.8rem;
         width: 100%;
-        height: 6.4rem;
+        margin-top: 4rem;
+        flex-direction: column;
       }
 
       &::after {
@@ -218,6 +208,47 @@
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
       }
+
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
     }
+
+    &__btn {
+      color: $color-white;
+      font-size: 2.2rem;
+      font-weight: 700;
+      line-height: 100%;
+      width: 32rem;
+      height: 7rem;
+      background-color: $color-green;
+      border: unset;
+      border-radius: 100vmax;
+      position: relative;
+      transition: all .5s;
+      cursor: pointer;
+
+      @media (max-width: 767px) {
+        font-size: 1.8rem;
+        width: 100%;
+        height: 6.4rem;
+      }
+
+      &--back {
+        background-color: $color-black;
+      }
+
+      &:hover {
+        opacity: .5;
+      }
+    }
+  }
+}
+
+.mw_wp_form_complete {
+  @media (max-width: 767px) {
+    padding: 0 2rem;
   }
 }
