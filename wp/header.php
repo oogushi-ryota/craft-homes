@@ -3,115 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/common/favicon.png">
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.min.css?250827">
+  <meta name="description" content="">
+  <meta property="og:description" content="">
+  <meta property="og:url" content=""/>
+  <meta property="og:site_name" content="タイトル"/>
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ja-JP">
+  <meta property="og:image" content="">
+  <meta name="twitter:card" content="summary">
+
+  <title>テスト</title>
+
+  <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/favicon.ico">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.min.css?250926">
 
   <!-- フォント読み込み -->
-  <script>
-    (function(d) {
-      var config = {
-        kitId: 'qwv3pbk',
-        scriptTimeout: 3000,
-        async: true
-      },
-      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-    })(document);
-  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
   <?php wp_head(); ?>
-
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6T6DDBVZ96"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-6T6DDBVZ96');
-  </script>
 </head>
 
-<body class="p-top">
+<body>
   <header class="l-header">
     <div class="l-header__inner">
-      <div class="l-header__cont">
-        <a href="<?php echo esc_url(home_url('/')); ?>" class="l-header__link">
-          <picture class="l-header__logo">
-            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/common/logo.webp" type="image/webp">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/logo.png" width="55" height="72" alt="にこまるえんのロゴ">
-          </picture>
+      <div class="l-header__nav c-nav">
+        <a href="<?php echo esc_url(home_url('/')); ?>" class="l-header__logo c-nav__logo">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/logo.svg" alt="クラフトホームズのロゴ">
         </a>
-        <div class="l-header__navarea">
-          <nav class="l-header__nav js-nav">
-            <ul class="l-header__nav-list">
-              <li class="l-header__nav-item l-header__nav-item--trigger">
-                <span class="l-header__nav-btn">にこまるえんってどんなとこ</span>
-                <div class="l-header__mega-menu">
-                  <ul class="l-header__mega-menu-list">
-                    <li class="l-header__mega-menu-item">
-                      <a href="<?php echo esc_url( home_url( '/philosophy/' ) ); ?>" class="l-header__mega-menu-link">
-                        <span class="l-header__mega-menu-line">ｰ </span>理念・保育方針
-                      </a>
-                    </li>
-                    <li class="l-header__mega-menu-item">
-                      <a href="<?php echo esc_url( home_url( '/about/' ) ); ?>" class="l-header__mega-menu-link">
-                        <span class="l-header__mega-menu-line">ｰ </span>園の概要・施設紹介
-                      </a>
-                    </li>
-                    <li class="l-header__mega-menu-item">
-                      <a href="<?php echo esc_url( home_url( '/schedule/' ) ); ?>" class="l-header__mega-menu-link">
-                        <span class="l-header__mega-menu-line">ｰ </span>園の1日・年間行事
-                      </a>
-                    </li>
-                    <li class="l-header__mega-menu-item">
-                      <a href="<?php echo esc_url( home_url( '/wellbeing/' ) ); ?>" class="l-header__mega-menu-link">
-                        <span class="l-header__mega-menu-line">ｰ </span>食育・アレルギー対応
-                      </a>
-                    </li>
-                  </ul>
-                </div>      
-              </li>
-              <li class="l-header__nav-item l-header__nav-item--trigger">
-                <span class="l-header__nav-btn">働く魅力</span>
-                <div class="l-header__mega-menu">
-                  <ul class="l-header__mega-menu-list">
-                    <li class="l-header__mega-menu-item">
-                      <a href="<?php echo esc_url( home_url( '/benefits/' ) ); ?>" class="l-header__mega-menu-link">
-                        <span class="l-header__mega-menu-line">ｰ </span>福利厚生・待遇
-                      </a>
-                    </li>
-                    <li class="l-header__mega-menu-item">
-                      <a href="<?php echo esc_url( home_url( '/career/' ) ); ?>" class="l-header__mega-menu-link">
-                        <span class="l-header__mega-menu-line">ｰ </span>研修制度・キャリアパス
-                      </a>
-                    </li>
-                    <li class="l-header__mega-menu-item">
-                      <a href="<?php echo esc_url( home_url( '/lifework/' ) ); ?>" class="l-header__mega-menu-link">
-                        <span class="l-header__mega-menu-line">ｰ </span>ライフワークバランス
-                      </a>
-                    </li>
-                  </ul>
-                </div>   
-              </li>
-              <li class="l-header__nav-item">
-                <a href="<?php echo esc_url( home_url( '/interview/' ) ); ?>" class="l-header__nav-link">職員インタビュー</a>
-              </li>
-              <li class="l-header__nav-item">
-                <a href="<?php echo esc_url( home_url( '/faq/' ) ); ?>" class="l-header__nav-link">よくあるご質問</a>
-              </li>
-            </ul>
-            <a href="<?php echo esc_url( home_url( '/entry/' ) ); ?>" class="l-header__entry">
-              <span class="l-header__entry-txt">ENTRY</span>
-              <svg class="l-header__arrow" width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M10.2324 5.91895L0.704101 11.4189L0.704102 0.418945L10.2324 5.91895Z" fill="white"/>
-              </svg>              
-            </a>
-          </nav>
-          <div class="l-header__hamburger js-nav-btn">
-            <span class="l-header__hamburger-line"></span>
-            <span class="l-header__hamburger-line"></span>
-            <span class="l-header__hamburger-line"></span>
-          </div>
+        <nav class="c-nav__nav js-nav">
+          <ul class="l-header__list c-nav__list">
+            <li class="l-header__item c-nav__item">
+              <a href="<?php echo esc_url( home_url( '/exterior/' ) ); ?>" class="l-header__link c-nav__link">外装リフォーム</a>
+            </li>
+            <li class="l-header__item c-nav__item">
+              <a href="<?php echo esc_url( home_url( '/interior/' ) ); ?>" class="l-header__link c-nav__link">内装リフォーム</a>
+            </li>
+            <li class="l-header__item c-nav__item">
+              <a href="<?php echo esc_url( home_url( '/news/' ) ); ?>" class="l-header__link c-nav__link">新着情報</a>
+            </li>
+            <li class="l-header__item c-nav__item">
+              <a href="<?php echo esc_url( home_url( '/about/' ) ); ?>" class="l-header__link c-nav__link">会社概要</a>
+            </li>
+            <li class="l-header__item l-header__contact c-nav__item c-nav__contact">
+              <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="l-header__link l-header__contact-btn c-nav__link c-nav__contact-btn">
+                <svg class="l-header__svg c-nav__svg" width="29" height="22" viewBox="0 0 29 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M25.4324 0H3.03242C1.49242 0 0.232422 1.2375 0.232422 2.75V19.25C0.232422 20.7625 1.49242 22 3.03242 22H25.4324C26.9724 22 28.2324 20.7625 28.2324 19.25V2.75C28.2324 1.2375 26.9724 0 25.4324 0ZM24.8724 5.84375L15.7164 11.4675C14.8064 12.0313 13.6584 12.0313 12.7484 11.4675L3.59242 5.84375C3.45204 5.76635 3.32911 5.66178 3.23107 5.53637C3.13302 5.41096 3.06191 5.26732 3.02203 5.11413C2.98215 4.96095 2.97433 4.80141 2.99904 4.64517C3.02376 4.48893 3.08049 4.33924 3.16582 4.20516C3.25114 4.07108 3.36328 3.9554 3.49544 3.86512C3.6276 3.77483 3.77704 3.71183 3.93472 3.67991C4.09239 3.64799 4.25502 3.64783 4.41276 3.67943C4.5705 3.71103 4.72007 3.77373 4.85242 3.86375L14.2324 9.625L23.6124 3.86375C23.7448 3.77373 23.8943 3.71103 24.0521 3.67943C24.2098 3.64783 24.3725 3.64799 24.5301 3.67991C24.6878 3.71183 24.8372 3.77483 24.9694 3.86512C25.1016 3.9554 25.2137 4.07108 25.299 4.20516C25.3844 4.33924 25.4411 4.48893 25.4658 4.64517C25.4905 4.80141 25.4827 4.96095 25.4428 5.11413C25.4029 5.26732 25.3318 5.41096 25.2338 5.53637C25.1357 5.66178 25.0128 5.76635 24.8724 5.84375Z" fill="white"/>
+                </svg>
+                お問い合わせ
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="l-header__hamburger js-nav-btn">
+          <span class="l-header__hamburger-line"></span>
+          <span class="l-header__hamburger-line"></span>
+          <span class="l-header__hamburger-line"></span>
         </div>
       </div>
     </div>

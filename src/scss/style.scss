@@ -14,9 +14,6 @@
 @use "component/inner";
 @use "component/btn";
 @use "component/sec-ttl";
-
-@use "component/color";
-@use "component/breadcrumb";
 @use "component/under-fv";
 @use "component/under-ttl";
 @use "component/under-sec-ttl";
@@ -54,7 +51,6 @@
 @use "project/contact/contact-form";
 
 // animation
-@use "animation/js-accordion";
 @use "animation/js-nav";
 
 // Utility

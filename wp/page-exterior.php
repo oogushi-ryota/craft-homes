@@ -1,0 +1,213 @@
+<?php
+/*
+Template Name: 外装リフォーム
+*/
+?>
+  <?php get_header(); ?>
+
+  <main class="l-main">
+    <div class="p-reform p-exterior">
+      <section class="c-under-fv c-under-fv--exterior">
+        <div class="c-inner">
+          <div class="c-under-ttl">
+            <span class="c-under-ttl__en">Exterior Renovation</span>
+            <h1 class="c-under-ttl__ja">外装リフォーム</h1>
+          </div>
+        </div>
+      </section>
+
+      <section class="p-reform-lead">
+        <div class="c-inner">
+          <h2 class="p-reform-lead__ttl">
+            外装を美しく保ち、<br>
+            快適な暮らしを未来へつなぐ
+          </h2>
+          <p class="p-reform-lead__txt">
+            外壁や屋根、ベランダや外構は、日々の風雨や紫外線にさらされ、劣化が進みやすい部分です。<br>
+            定期的なリフォームを行うことで、美観を保ちながら建物の耐久性を高め、安心できる住まいを長く維持できます。<br>
+            クラフトホームズは幅広い外装リフォームに対応し、快適な暮らしを未来へとつなぎます。
+          </p>
+        </div>
+      </section>
+
+      <section class="p-reform-reason">
+        <div class="c-inner">
+          <h2 class="p-reform-reason__ttl c-under-sec-ttl">外装リフォームが必要な理由</h2>
+          <p class="p-reform-reason__txt">
+            外装は日々の風雨や紫外線の影響を受け、劣化が進みやすい部分です。<br>
+            こんな症状が見られたらリフォームを検討するタイミングです。
+          </p>
+          <ul class="p-reform-reason__list">
+            <li class="p-reform-reason__item">
+              <div class="p-reform-reason__imgwrap">
+                <picture class="p-reform-reason__img">
+                  <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/exterior/reason/reason_img01.webp" type="image/webp">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/exterior/reason/reason_img01.jpg" width="330" height="400" alt="外壁の色あせ・ひび割れ">
+                </picture>
+                <h3 class="p-reform-reason__item-ttl">外壁の色あせ・ひび割れ</h3>
+              </div>
+              <p class="p-reform-reason__item-txt">見た目だけでなく、防水性の低下につながります。</p>
+            </li>
+            <li class="p-reform-reason__item">
+              <div class="p-reform-reason__imgwrap">
+                <picture class="p-reform-reason__img">
+                  <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/exterior/reason/reason_img02.webp" type="image/webp">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/exterior/reason/reason_img02.jpg" width="330" height="400" alt="屋根材のズレや破損">
+                </picture>
+                <h3 class="p-reform-reason__item-ttl">屋根材のズレや破損</h3>
+              </div>
+              <p class="p-reform-reason__item-txt">雨漏りや下地の腐食の原因になります</p>
+            </li>
+            <li class="p-reform-reason__item">
+              <div class="p-reform-reason__imgwrap">
+                <picture class="p-reform-reason__img">
+                  <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/exterior/reason/reason_img03.webp" type="image/webp">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/exterior/reason/reason_img03.jpg" width="330" height="400" alt="ベランダの防水層の劣化">
+                </picture>
+                <h3 class="p-reform-reason__item-ttl">ベランダの防水層の劣化</h3>
+              </div>
+              <p class="p-reform-reason__item-txt">表面のひびや浮きから雨水が侵入しやすくなります。</p>
+            </li>
+            <li class="p-reform-reason__item">
+              <div class="p-reform-reason__imgwrap">
+                <picture class="p-reform-reason__img">
+                  <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/exterior/reason/reason_img04.webp" type="image/webp">
+                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/exterior/reason/reason_img04.jpg" width="330" height="400" alt="外構やフェンスの老朽化">
+                </picture>
+                <h3 class="p-reform-reason__item-ttl">外構やフェンスの老朽化</h3>
+              </div>
+              <p class="p-reform-reason__item-txt">安全性や住まいの印象を損なう恐れがあります。</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="p-reform-feature">
+        <div class="c-inner">
+          <h2 class="p-reform-feature__ttl c-under-sec-ttl">
+            クラフトホームズの<br>
+            外装リフォームの特徴
+          </h2>
+          <ol class="p-reform-feature__list">
+            <li class="p-reform-feature__item">
+              <picture class="p-reform-feature__img">
+                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/exterior/feature/feature_img01.webp" type="image/webp">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/exterior/feature/feature_img01.jpg" width="390" height="310" alt="屋外環境に強い施工">
+              </picture>
+              <h3 class="p-reform-feature__item-ttl">屋外環境に強い施工</h3>
+              <p class="p-reform-feature__item-txt">紫外線や風雨にさらされる外装だからこそ、耐久性を重視した施工を行います。</p>
+            </li>
+            <li class="p-reform-feature__item">
+              <picture class="p-reform-feature__img">
+                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/exterior/feature/feature_img02.webp" type="image/webp">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/exterior/feature/feature_img02.jpg" width="390" height="310" alt="幅広い工事に対応">
+              </picture>
+              <h3 class="p-reform-feature__item-ttl">幅広い工事に対応</h3>
+              <p class="p-reform-feature__item-txt">屋根・外壁・ベランダから外構・太陽光まで、外装全般をまとめてご相談いただけます。</p>
+            </li>
+            <li class="p-reform-feature__item">
+              <picture class="p-reform-feature__img">
+                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/exterior/feature/feature_img03.webp" type="image/webp">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/exterior/feature/feature_img03.jpg" width="390" height="310" alt="景観と機能性の両立">
+              </picture>
+              <h3 class="p-reform-feature__item-ttl">景観と機能性の両立</h3>
+              <p class="p-reform-feature__item-txt">美観を整えるだけでなく、防水性や断熱性など機能性も高めるリフォームをご提案します。</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="p-reform-variation">
+        <h2 class="p-reform-variation__ttl c-under-sec-ttl">
+          クラフトホームズの<br>
+          外装リフォームの種類
+        </h2>
+        <div class="p-reform-variation__wrap">
+          <div class="p-reform-variation__cont">
+            <picture class="p-reform-variation__img">
+              <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/exterior/variation/variation_img01.webp" type="image/webp">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/exterior/variation/variation_img01.jpg" width="936" height="450" alt="屋根リフォーム">
+            </picture>
+            <div class="p-reform-variation__txtarea">
+              <h3 class="p-reform-variation__cont-ttl">屋根リフォーム</h3>
+              <p class="p-reform-variation__txt">
+                屋根は風雨や紫外線の影響を最も受けやすい部分です。<br>
+                葺き替えやカバー工法など、建物の状態に合わせて最適な方法で施工し、雨漏りや劣化から住まいを守ります。
+              </p>
+            </div>
+          </div>
+          <div class="p-reform-variation__cont">
+            <picture class="p-reform-variation__img">
+              <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/exterior/variation/variation_img02.webp" type="image/webp">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/exterior/variation/variation_img02.jpg" width="936" height="450" alt="外壁リフォーム">
+            </picture>
+            <div class="p-reform-variation__txtarea">
+              <h3 class="p-reform-variation__cont-ttl">外壁リフォーム</h3>
+              <p class="p-reform-variation__txt">
+                外壁は住まいの美観を保つだけでなく、防水性能を維持するためにも重要です。<br>
+                塗装や張り替えを行い、ひび割れや色あせを防ぎながら建物を長持ちさせます。
+              </p>
+            </div>
+          </div>
+          <div class="p-reform-variation__cont">
+            <picture class="p-reform-variation__img">
+              <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/exterior/variation/variation_img03.webp" type="image/webp">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/exterior/variation/variation_img03.jpg" width="936" height="450" alt="ベランダリフォーム">
+            </picture>
+            <div class="p-reform-variation__txtarea">
+              <h3 class="p-reform-variation__cont-ttl">ベランダリフォーム</h3>
+              <p class="p-reform-variation__txt">
+                ベランダは防水層の劣化が進みやすく、放置すると雨漏りの原因になります。<br>
+                防水工事や補修によって安心して使える快適な空間を維持します。
+              </p>
+            </div>
+          </div>
+          <div class="p-reform-variation__cont">
+            <picture class="p-reform-variation__img">
+              <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/exterior/variation/variation_img04.webp" type="image/webp">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/exterior/variation/variation_img04.jpg" width="936" height="450" alt="外構・庭リフォーム">
+            </picture>
+            <div class="p-reform-variation__txtarea">
+              <h3 class="p-reform-variation__cont-ttl">外構・庭リフォーム</h3>
+              <p class="p-reform-variation__txt">
+                門扉・フェンス・駐車場・庭づくりなど、外構や庭は住まい全体の印象を大きく左右します。<br>
+                ライフスタイルに合わせたリフォームで、機能性とデザイン性を高めます。
+              </p>
+            </div>
+          </div>
+          <div class="p-reform-variation__cont">
+            <picture class="p-reform-variation__img">
+              <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/exterior/variation/variation_img05.webp" type="image/webp">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/exterior/variation/variation_img05.jpg" width="936" height="450" alt="太陽光発電・省エネ機器">
+            </picture>
+            <div class="p-reform-variation__txtarea">
+              <h3 class="p-reform-variation__cont-ttl">太陽光発電・省エネ機器</h3>
+              <p class="p-reform-variation__txt">
+                環境への配慮と家計の負担軽減を両立できる太陽光発電や省エネ設備。<br>
+                最新の機器を導入することで、快適で持続可能な暮らしをサポートします。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="p-reform-afterservice">
+        <div class="c-inner c-inner--160">
+          <div class="p-reform-afterservice__cont">
+            <div class="p-reform-afterservice__ttlarea">
+              <h2 class="p-reform-afterservice__ttl">保証・アフターサービス</h2>
+              <p class="p-reform-afterservice__txt">
+                すべての工事には、最長10年保証とアフターサービスが付いています。<br>
+                施工後も安心してお住まいいただけるよう、しっかりとサポートいたします。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <?php get_template_part( 'parts/parts', 'contact' ); ?>
+    </div>
+
+  </main>
+
+  <?php get_footer(); ?>
