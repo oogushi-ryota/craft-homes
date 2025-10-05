@@ -144,17 +144,45 @@ Template Name: トップページ
       <section class="p-top-news">
         <div class="p-top-news__inner">
           <h2 class="p-top-news__ttl c-sec-ttl">新着情報</h2>
+
+          <?php
+          // ▼ 投稿を最新順に5件取得
+          $args = array(
+            'post_type'      => 'post',   // 投稿タイプ（標準の投稿）
+            'posts_per_page' => 5,        // 表示件数
+            'post_status'    => 'publish' // 公開済みのみ
+          );
+          $the_query = new WP_Query($args);
+          ?>
+          <?php if ( $the_query->have_posts() ) : ?>
           <ul class="p-top-news__list">
+            <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
             <li class="p-top-news__item">
               <a href="<?php the_permalink(); ?>" class="p-top-news__link">
                 <span class="p-top-news__link-head">
-                  <time datetime="2025.00.00" class="p-top-news__time">2025.00.00</time>
-                  <span class="p-top-news__tag">カテゴリ</span>
+                  <time datetime="<?php echo get_the_date('c'); ?>" class="p-top-news__time"><?php echo get_the_date('Y.m.d'); ?></time>
+                  <?php
+                  $categories = get_the_category();
+                  if ( $categories ) :
+                    foreach ( $categories as $category ) :
+                  ?>
+                    <span class="p-top-news__tag">
+                      <?php echo esc_html( $category->name ); ?>
+                    </span>
+                  <?php
+                    endforeach;
+                  endif;
+                  ?>
                 </span>
-                <h3 class="p-top-news__item-ttl">記事のタイトルが入ります。記事のタイトルが入ります。</h3>
+                <h3 class="p-top-news__item-ttl"><?php the_title(); ?></h3>
               </a>
             </li>
+            <?php endwhile; ?>
           </ul>
+          <?php else : ?>
+            <p>記事が見つかりませんでした。</p>
+          <?php endif; ?>
+          <?php wp_reset_postdata(); ?>
           <div class="p-top-news__btn-wrap">
             <a href="<?php echo esc_url(home_url('/news/')); ?>" class="c-btn">
               新着情報一覧を見る

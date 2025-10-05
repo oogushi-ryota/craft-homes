@@ -47,6 +47,11 @@
         color: $color-white;
         background-color: $color-green;
         border: solid 1px $color-green;
+
+        &.is-current {
+          background-color: $color-green !important;
+          border: solid 1px $color-green !important;
+        }
       }
 
       &.is-current {

@@ -1,8 +1,3 @@
-<?php
-/*
-Template Name: 新着情報
-*/
-?>
   <?php get_header(); ?>
 
   <main class="l-main">
@@ -19,48 +14,65 @@ Template Name: 新着情報
       <div class="p-news-category">
         <ul class="p-news-category__list">
           <li class="p-news-category__item">
-            <a href="" class="p-news-category__link p-news-category__link--all">全て</a>
+            <a href="<?php echo esc_url( home_url( '/news/' ) ); ?>" class="p-news-category__link p-news-category__link--all <?php if ( is_home() || is_post_type_archive('post') || is_page('news') && !is_category() ) echo 'is-current'; ?>">全て</a>
           </li>
-          <li class="p-news-category__item">
-            <a href="" class="p-news-category__link is-current">カテゴリ</a>
+          <?php
+          // 未分類の ID を取得
+          $uncat_id = get_cat_ID('未分類');
+
+          $categories = get_categories( array(
+            'orderby'    => 'term_order',
+            'order'      => 'ASC',
+            'hide_empty' => 0, // ★ 空のカテゴリも表示
+            'exclude'    => array( $uncat_id ), // ★ 未分類を除外
+          ) );
+
+          foreach ( $categories as $category ) :
+            $is_current = ( is_category( $category->term_id ) ) ? ' is-current' : '';
+          ?>
+
+          <li class="p-news-category__item category-<?php echo esc_attr( $category->slug ); ?>">
+            <a href="<?php echo esc_url( get_category_link( $category->term_id ) ); ?>" class="p-news-category__link<?php echo $is_current; ?>">
+              <?php echo esc_html( $category->name ); ?>
+            </a>
           </li>
-          <li class="p-news-category__item">
-            <a href="" class="p-news-category__link">カテゴリ</a>
-          </li>
-          <li class="p-news-category__item">
-            <a href="" class="p-news-category__link">カテゴリ</a>
-          </li>
-          <li class="p-news-category__item">
-            <a href="" class="p-news-category__link">カテゴリ</a>
-          </li>
-          <li class="p-news-category__item">
-            <a href="" class="p-news-category__link">カテゴリ</a>
-          </li>
+          <?php endforeach; ?>
         </ul>
       </div>
 
       <section class="p-news-archive">
         <div class="c-inner">
+
+          <?php if ( have_posts() ) : ?>
           <ul class="p-news-archive__list">
+            <?php while ( have_posts() ) : the_post(); ?>
             <li class="p-news-archive__item">
-              <a href="" class="p-news-archive__link">
+              <a href="<?php the_permalink(); ?>" class="p-news-archive__link">
                 <span class="p-news-archive__link-head">
-                  <time datetime="2025.00.00" class="p-news-archive__time">2025.00.00</time>
-                  <span class="p-news-archive__tag">カテゴリ</span>
+                  <time datetime="<?php echo get_the_date('c'); ?>" class="p-news-archive__time"><?php echo get_post_time('Y.m.d'); ?></time>
+                  <?php
+                  $categories = get_the_category();
+                  if ( $categories ) :
+                    foreach ( $categories as $category ) :
+                  ?>
+                    <span class="p-news-archive__tag">
+                      <?php echo esc_html( $category->name ); ?>
+                    </span>
+                  <?php
+                    endforeach;
+                  endif;
+                  ?>
                 </span>
-                <h3 class="p-news-archive__item-ttl">記事のタイトルが入ります。記事のタイトルが入ります。</h3>
+                <h3 class="p-news-archive__item-ttl"><?php the_title(); ?></h3>
               </a>
             </li>
-          </ul>
-          <div class="p-news-archive__pagination">
-            <span class="prev page-numbers disabled">前へ</span>
-            <span aria-current="page" class="page-numbers current">1</span>
-            <a class="page-numbers" href="">2</a>
-            <a class="page-numbers" href="">3</a>
-            <span class="page-numbers dots">…</span>
-            <a class="page-numbers" href="">8</a>
-            <a class="next page-numbers" href="">次へ</a>
-          </div>
+            <?php endwhile; ?>
+          </ul> 
+          <?php else : ?>
+            <p>記事が見つかりませんでした。</p>
+          <?php endif; ?>
+
+          <?php get_template_part('parts/pagination'); ?>
         </div>
       </section>
 
