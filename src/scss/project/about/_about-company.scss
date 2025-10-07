@@ -52,7 +52,7 @@
     }
 
     &__th {
-      width: 15.2rem;
+      width: 14rem;
 
       @media (max-width: 767px) {
         width: 10rem;
@@ -61,6 +61,16 @@
 
     &__td {
       line-height: 150%;
+    }
+
+    &__td-wrap {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+
+      &:not(:first-child) {
+        margin-top: 1.6rem;
+      }
     }
   }
 }

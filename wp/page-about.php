@@ -31,48 +31,67 @@ Template Name: 会社概要
           <table class="p-about-company__table">
             <tbody class="p-about-company__tbody">
               <tr class="p-about-company__tr">
-                <th class="p-about-company__th">会社名</th>
+                <th class="p-about-company__th">屋号</th>
                 <td class="p-about-company__td">クラフトホームズ</td>
+              </tr>
+              <tr class="p-about-company__tr">
+                <th class="p-about-company__th">運営会社名</th>
+                <td class="p-about-company__td">株式会社クラフトマン</td>
               </tr>
               <tr class="p-about-company__tr">
                 <th class="p-about-company__th">所在地</th>
                 <td class="p-about-company__td">
-                  〒000-0000<br>
-                  東京都
+                  〒180-0004<br>
+                  東京都武蔵野市吉祥寺本町1-20-1 吉祥寺永谷シティプラザ
                 </td>
               </tr>
               <tr class="p-about-company__tr">
                 <th class="p-about-company__th">電話番号</th>
-                <td class="p-about-company__td">000-0000-0000</td>
+                <td class="p-about-company__td">
+                  0120-990-656<br>
+                  042-843-5280
+                </td>
               </tr>
               <tr class="p-about-company__tr">
                 <th class="p-about-company__th">FAX番号</th>
-                <td class="p-about-company__td">000-0000-0000</td>
+                <td class="p-about-company__td">042-843-5268</td>
               </tr>
               <tr class="p-about-company__tr">
                 <th class="p-about-company__th">創立</th>
-                <td class="p-about-company__td">0000年 0月</td>
+                <td class="p-about-company__td">2022年12月26日</td>
               </tr>
               <tr class="p-about-company__tr">
                 <th class="p-about-company__th">資本金</th>
-                <td class="p-about-company__td">00万円</td>
+                <td class="p-about-company__td">5,000万円</td>
               </tr>
               <tr class="p-about-company__tr">
                 <th class="p-about-company__th">従業員数</th>
-                <td class="p-about-company__td">00名（0000年 0月 現在）</td>
+                <td class="p-about-company__td">32名　※業務委託社員含む（2025年10月現在）</td>
               </tr>
               <tr class="p-about-company__tr">
                 <th class="p-about-company__th">業務内容</th>
                 <td class="p-about-company__td">
-                  (1) 一般住宅設計, 施工(ソーラーサーキット住宅) (SE工法)<br>
-                  (2)土地有効活用, 企画, 立案<br>
-                  (3)大型建築(S造, RC造, SRC造) 建築, 設計, 施工<br>
-                  (4)不動産紹介
+                  <span class="p-about-company__td-wrap">
+                    <span class="p-about-company__td-list-num">(1)</span>
+                    戸建住宅・集合住宅・店舗・オフィスを対象とした「総合リフォーム事業」
+                  </span>
+                  <span class="p-about-company__td-wrap">
+                    <span class="p-about-company__td-list-num">(2)</span>
+                    太陽光発電システム、蓄電池、オール電化設備、省エネ改修等の「太陽光発電・省エネ事業」
+                  </span>
+                  <span class="p-about-company__td-wrap">
+                    <span class="p-about-company__td-list-num">(3)</span>
+                    マンション・ビル・商業施設における外壁補修、防水などの「大規模修繕・改修工事業」
+                  </span>
+                  <span class="p-about-company__td-wrap">
+                    <span class="p-about-company__td-list-num">(4)</span>
+                    市区町村をはじめとする公共施設の改修工事、耐震補強、インフラ整備等の「公共工事業」 
+                  </span>
                 </td>
               </tr>
               <tr class="p-about-company__tr">
                 <th class="p-about-company__th">取引銀行</th>
-                <td class="p-about-company__td">みずほ銀行, 埼玉りそな銀行, 武蔵野銀行, 東京信用金庫</td>
+                <td class="p-about-company__td">みずほ銀行　青梅信用金庫　payapay銀行</td>
               </tr>
             </tbody>
           </table>

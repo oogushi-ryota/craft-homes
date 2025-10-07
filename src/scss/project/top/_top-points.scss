@@ -57,8 +57,12 @@
         gap: 2.4rem;
 
         &:not(:first-child) {
-            margin-top: 4rem;
-          }
+          margin-top: 4rem;
+        }
+      }
+
+      &:not(:first-child) {
+        margin-top: 8rem;
       }
 
       &:nth-of-type(2) {

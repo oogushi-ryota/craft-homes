@@ -9,13 +9,7 @@
     @media (max-width: 767px) {
       margin-top: 8rem;
       padding: 8rem 0;
-    }
-
-    &__inner {
-      @media (max-width: 767px) {
-        padding: 0 2rem;
-      }
-    }
+    } 
 
     &__cont {
       display: flex;
@@ -34,8 +28,17 @@
       height: 80rem;
 
       @media (max-width: 767px) {
-        width: 100%;
+        width: calc(100% - 2rem);
         height: auto;
+        padding-right: 2rem;
+      }
+
+      img {
+        border-radius: 0 1.6rem 1.6rem 0;
+
+        @media (max-width: 767px) {
+          border-radius: 0 1rem 1rem 0;
+        }
       }
     }
 
@@ -44,6 +47,7 @@
 
       @media (max-width: 767px) {
         width: 100%;
+        padding: 0 2rem;
       }
     }
 

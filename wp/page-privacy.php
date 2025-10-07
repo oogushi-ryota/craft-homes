@@ -65,10 +65,10 @@ Template Name: プライバシーポリシー
               <h2 class="p-privacy-details__item-ttl">6. お問い合わせ窓口</h2>
               <p class="p-privacy-details__item-txt">
                 クラフトホームズ<br>
-                〒000-0000<br>
-                東京都〇〇区〇〇<br>
-                TEL：000-0000-0000<br>
-                Mail：info@example.com
+                〒180-0004<br>
+                東京都武蔵野市吉祥寺本町1-20-1 吉祥寺永谷シティプラザ<br>
+                TEL：0120-990-656
+                <!-- Mail：info@example.com -->
               </p>
             </li>
           </ol>
