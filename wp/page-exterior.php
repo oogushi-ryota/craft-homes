@@ -23,9 +23,9 @@ Template Name: 外装リフォーム
             快適な暮らしを未来へつなぐ
           </h2>
           <p class="p-reform-lead__txt">
-            外壁や屋根、ベランダや外構は、日々の風雨や紫外線にさらされ、劣化が進みやすい部分です。<br>
-            定期的なリフォームを行うことで、美観を保ちながら建物の耐久性を高め、安心できる住まいを長く維持できます。<br>
-            クラフトホームズは幅広い外装リフォームに対応し、快適な暮らしを未来へとつなぎます。
+            クラフトホームズでは、住まいの外装をトータルでサポートしています。<br>
+            屋根・外壁・ベランダ・外構・省エネ設備まで、建物の状態やご要望に合わせて最適なプランをご提案。<br>
+            デザイン性と機能性を兼ね備えたリフォームで、長く快適に暮らせる住まいを実現します。
           </p>
         </div>
       </section>
@@ -56,7 +56,7 @@ Template Name: 外装リフォーム
                 </picture>
                 <h3 class="p-reform-reason__item-ttl">屋根材のズレや破損</h3>
               </div>
-              <p class="p-reform-reason__item-txt">雨漏りや下地の腐食の原因になります</p>
+              <p class="p-reform-reason__item-txt">雨漏りや下地の腐食の原因になります。</p>
             </li>
             <li class="p-reform-reason__item">
               <div class="p-reform-reason__imgwrap">
@@ -120,7 +120,7 @@ Template Name: 外装リフォーム
       <section class="p-reform-variation">
         <h2 class="p-reform-variation__ttl c-under-sec-ttl">
           クラフトホームズの<br>
-          外装リフォームの種類
+          外装リフォームメニュー
         </h2>
         <div class="p-reform-variation__wrap">
           <div class="p-reform-variation__cont">
@@ -132,7 +132,9 @@ Template Name: 外装リフォーム
               <h3 class="p-reform-variation__cont-ttl">屋根リフォーム</h3>
               <p class="p-reform-variation__txt">
                 屋根は風雨や紫外線の影響を最も受けやすい部分です。<br>
-                葺き替えやカバー工法など、建物の状態に合わせて最適な方法で施工し、雨漏りや劣化から住まいを守ります。
+                劣化を放置すると雨漏りや内部腐食の原因にもなります。<br>
+                クラフトホームズでは、葺き替え・カバー工法など最適な工法をご提案し、建物の寿命を延ばします。<br>
+                耐久性・断熱性・デザイン性を兼ね備えた屋根で、快適な暮らしを守ります。
               </p>
             </div>
           </div>
@@ -144,8 +146,10 @@ Template Name: 外装リフォーム
             <div class="p-reform-variation__txtarea">
               <h3 class="p-reform-variation__cont-ttl">外壁リフォーム</h3>
               <p class="p-reform-variation__txt">
-                外壁は住まいの美観を保つだけでなく、防水性能を維持するためにも重要です。<br>
-                塗装や張り替えを行い、ひび割れや色あせを防ぎながら建物を長持ちさせます。
+                外壁は美観を保つだけでなく、防水性能を維持するためにも重要です。<br>
+                ひび割れや色あせが目立ち始めたら、早めのメンテナンスが肝心です。<br>
+                当社では、塗装・張り替え・カバー工法など、建物に最適な施工プランをご提案。<br>
+                美しさと耐久性を両立し、長く安心して暮らせる住まいへと導きます。
               </p>
             </div>
           </div>
@@ -157,8 +161,9 @@ Template Name: 外装リフォーム
             <div class="p-reform-variation__txtarea">
               <h3 class="p-reform-variation__cont-ttl">ベランダリフォーム</h3>
               <p class="p-reform-variation__txt">
-                ベランダは防水層の劣化が進みやすく、放置すると雨漏りの原因になります。<br>
-                防水工事や補修によって安心して使える快適な空間を維持します。
+                ベランダは防水層の劣化が進みやすく、放置すると雨漏りの原因となります。<br>
+                クラフトホームズでは、防水工事・トップコート補修・防滑仕上げなど幅広く対応。<br>
+                安全で快適に使える空間を長期的に維持します。
               </p>
             </div>
           </div>
@@ -170,8 +175,9 @@ Template Name: 外装リフォーム
             <div class="p-reform-variation__txtarea">
               <h3 class="p-reform-variation__cont-ttl">外構・庭リフォーム</h3>
               <p class="p-reform-variation__txt">
-                門扉・フェンス・駐車場・庭づくりなど、外構や庭は住まい全体の印象を大きく左右します。<br>
-                ライフスタイルに合わせたリフォームで、機能性とデザイン性を高めます。
+                外構や庭は、住まい全体の印象を決める大切な要素です。<br>
+                門扉・フェンス・アプローチ・駐車場・庭づくりなど、デザインと機能性を両立したプランをご提案。<br>
+                暮らしに調和する外回り空間をトータルで演出します。
               </p>
             </div>
           </div>
@@ -182,10 +188,7 @@ Template Name: 外装リフォーム
             </picture>
             <div class="p-reform-variation__txtarea">
               <h3 class="p-reform-variation__cont-ttl">太陽光発電・省エネ機器</h3>
-              <p class="p-reform-variation__txt">
-                環境への配慮と家計の負担軽減を両立できる太陽光発電や省エネ設備。<br>
-                最新の機器を導入することで、快適で持続可能な暮らしをサポートします。
-              </p>
+              <p class="p-reform-variation__txt">エネルギーコストの削減と環境への配慮を両立できる、太陽光発電・蓄電池・省エネ設備の導入もお任せください。最新機器を活用したご提案で、快適で持続可能な住まいづくりをサポートします。</p>
             </div>
           </div>
         </div>

@@ -23,9 +23,9 @@ Template Name: 内装リフォーム
             住まいの価値を高める
           </h2>
           <p class="p-reform-lead__txt">
-            内装は、毎日の暮らしに直結する大切な空間です。<br>
-            キッチン・浴室・洗面・トイレなどの水回りから、壁紙や床材といった内装仕上げまで、デザイン性と機能性を兼ね備えたリフォームをご提案します。<br>
-            クラフトホームズは、お客様のライフスタイルに合わせて、快適で心地よい住まいづくりをサポートします。
+            内装は、毎日の暮らしを快適にするための大切な空間です。<br>
+            クラフトホームズでは、キッチン・浴室・洗面・トイレなどの水回りから、壁紙・床材のリフォームまで、デザイン性と機能性を両立したご提案を行っています。<br>
+            お客様のライフスタイルやご希望に合わせて、快適で心地よい住まいづくりをトータルにサポートします。
           </p>
         </div>
       </section>
@@ -66,7 +66,7 @@ Template Name: 内装リフォーム
                 </picture>
                 <h3 class="p-reform-reason__item-ttl">収納不足や間取りの使いづらさ</h3>
               </div>
-              <p class="p-reform-reason__item-txt">暮らしの変化に合わせた改善が必要です</p>
+              <p class="p-reform-reason__item-txt">暮らしの変化に合わせた改善が必要です。</p>
             </li>
             <li class="p-reform-reason__item">
               <div class="p-reform-reason__imgwrap">
@@ -120,7 +120,7 @@ Template Name: 内装リフォーム
       <section class="p-reform-variation">
         <h2 class="p-reform-variation__ttl c-under-sec-ttl">
           クラフトホームズの<br>
-          内装リフォームの種類
+          内装リフォームメニュー
         </h2>
         <div class="p-reform-variation__wrap">
           <div class="p-reform-variation__cont">
@@ -131,8 +131,10 @@ Template Name: 内装リフォーム
             <div class="p-reform-variation__txtarea">
               <h3 class="p-reform-variation__cont-ttl">キッチンリフォーム</h3>
               <p class="p-reform-variation__txt">
-                キッチンは毎日使う場所だからこそ、使い勝手とデザイン性の両立が大切です。<br>
-                収納力や動線を改善し、快適に調理ができる空間を実現します。
+                毎日使うキッチンだからこそ、使いやすさとデザイン性の両立が大切です。<br>
+                収納力や動線を見直し、快適に調理ができる空間を実現します。<br>
+                対面式・アイランド型など、ご希望に合わせたレイアウトのご提案も可能です。<br>
+                毎日の料理がもっと楽しく、心地よい時間に変わります。
               </p>
             </div>
           </div>
@@ -144,8 +146,9 @@ Template Name: 内装リフォーム
             <div class="p-reform-variation__txtarea">
               <h3 class="p-reform-variation__cont-ttl">浴室リフォーム</h3>
               <p class="p-reform-variation__txt">
-                一日の疲れを癒やす浴室は、快適性と安全性が求められる空間です。<br>
-                最新のユニットバスや手すりの設置など、ご家族に合わせた安心の浴室をご提案します。
+                一日の疲れを癒やす浴室は、快適性と安全性が求められる場所。<br>
+                最新のユニットバスや手すり設置、防カビ仕様など、ご家族のニーズに合わせた安心・快適なバスルームをご提案します。<br>
+                心も体もリラックスできる、上質なくつろぎ空間を実現します。
               </p>
             </div>
           </div>
@@ -157,8 +160,9 @@ Template Name: 内装リフォーム
             <div class="p-reform-variation__txtarea">
               <h3 class="p-reform-variation__cont-ttl">洗面リフォーム</h3>
               <p class="p-reform-variation__txt">
-                洗面所は朝の身支度から夜のスキンケアまで、生活の中心となる場所です。<br>
-                収納や清掃性に優れた洗面台を取り入れることで、日々の暮らしがよりスムーズになります。
+                洗面所は朝の身支度から夜のスキンケアまで、暮らしの中心となる空間です。<br>
+                収納性・清掃性に優れた洗面台や、湿気に強い内装材を選ぶことで、毎日の生活がより快適に。<br>
+                家族みんなが気持ちよく使える清潔で明るい洗面空間をつくります。
               </p>
             </div>
           </div>
@@ -170,8 +174,9 @@ Template Name: 内装リフォーム
             <div class="p-reform-variation__txtarea">
               <h3 class="p-reform-variation__cont-ttl">トイレリフォーム</h3>
               <p class="p-reform-variation__txt">
-                トイレは省エネ性やお手入れのしやすさが重要です。<br>
-                節水機能や抗菌仕様の設備を導入し、清潔で快適な空間に整えます。
+                トイレは、毎日使うからこそ清潔さと機能性が重要です。<br>
+                節水機能・抗菌仕様・手洗い一体型などの最新設備を導入し、快適で美しい空間をつくります。<br>
+                毎日使う場所だからこそ、安心と清潔にこだわった空間をご提案します。
               </p>
             </div>
           </div>
@@ -183,8 +188,9 @@ Template Name: 内装リフォーム
             <div class="p-reform-variation__txtarea">
               <h3 class="p-reform-variation__cont-ttl">内装リフォーム<br class="is-sp">（壁紙・床など）</h3>
               <p class="p-reform-variation__txt">
-                クロスや床材の張り替えは、住まいの印象を大きく変えるポイントです。<br>
-                デザイン性を高めるだけでなく、断熱性や防音性の向上にもつながります。
+                クロスや床材の張り替えは、住まいの印象を一新するポイントです。<br>
+                デザイン性の高い素材や、断熱・防音性能に優れた仕上げ材を採用し、快適な空間へとリフレッシュします。<br>
+                お部屋の雰囲気を一新し、毎日がより心地よく過ごせる住まいに。
               </p>
             </div>
           </div>
