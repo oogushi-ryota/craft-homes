@@ -15,7 +15,7 @@
   <title>テスト</title>
 
   <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/favicon.ico">
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.min.css?251011">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.min.css?251011-2">
 
   <!-- フォント読み込み -->
   <link rel="preconnect" href="https://fonts.googleapis.com">

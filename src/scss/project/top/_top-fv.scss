@@ -9,7 +9,7 @@
     position: relative;
 
     @media (max-width: 767px) {
-      height: 100vh;
+      height: 64rem;
       clip-path: ellipse(150% 100% at 50% 0);
     }
 
@@ -36,10 +36,6 @@
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-
-      @media (max-width: 767px) {
-        background-position: left;
-      }
     }
 
     &__ttlarea {
