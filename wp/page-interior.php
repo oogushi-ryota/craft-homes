@@ -213,6 +213,19 @@ Template Name: 内装リフォーム
 
       <?php get_template_part( 'parts/parts', 'contact' ); ?>
     </div>
+
+    <div class="c-breadcrumb">
+      <div class="c-inner">
+        <ul class="c-breadcrumb__list">
+          <li class="c-breadcrumb__item">
+            <a href="<?php echo esc_url(home_url('/')); ?>" class="c-breadcrumb__link">トップ</a>
+          </li>
+          <li class="c-breadcrumb__item">
+            <span class="c-breadcrumb__link">内装リフォーム</span>
+          </li>
+        </ul>
+      </div>
+    </div>
   </main>
 
   <?php get_footer(); ?>

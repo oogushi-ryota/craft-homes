@@ -35,6 +35,14 @@
             <li class="l-header__item c-nav__item">
               <a href="<?php echo esc_url( home_url( '/about/' ) ); ?>" class="l-header__link c-nav__link">会社概要</a>
             </li>
+            <li class="l-header__item l-header__tel c-nav__item is-sp">
+              <a href="tel:0120-990-656" class="l-header__link c-nav__link l-header__tel-btn">
+                <svg class="l-header__tel-svg" width="25" height="40" viewBox="0 0 25 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20.8577 0H4.85767C3.7968 0 2.77938 0.421427 2.02924 1.17157C1.27909 1.92172 0.857666 2.93913 0.857666 4V36C0.857666 37.0609 1.27909 38.0783 2.02924 38.8284C2.77938 39.5786 3.7968 40 4.85767 40H20.8577C21.9185 40 22.9359 39.5786 23.6861 38.8284C24.4362 38.0783 24.8577 37.0609 24.8577 36V4C24.8577 2.93913 24.4362 1.92172 23.6861 1.17157C22.9359 0.421427 21.9185 0 20.8577 0ZM14.8577 38H10.8577V36H14.8577V38ZM20.8577 34H4.85767V6H20.8577V34Z" fill="white"/>
+                </svg>
+                お電話でのご相談
+              </a>
+            </li>
             <li class="l-header__item l-header__contact c-nav__item c-nav__contact">
               <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="l-header__link l-header__contact-btn c-nav__link c-nav__contact-btn">
                 <svg class="l-header__svg c-nav__svg" width="29" height="22" viewBox="0 0 29 22" fill="none" xmlns="http://www.w3.org/2000/svg">

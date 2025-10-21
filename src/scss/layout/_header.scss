@@ -71,6 +71,28 @@
       }
     }
 
+    &__tel {
+      width: 100%;
+    }
+
+    &__tel-svg {
+      width: 2rem;
+      height: 3.2rem;
+    }
+
+    &__tel-btn {
+      width: 100% !important;
+      height: 7rem !important;
+      padding: 2.4rem 0 !important;
+      display: flex;
+      align-items: center !important;
+      justify-content: center !important;
+      color: #fff !important;
+      padding: 2.4rem 4rem;
+      background-color: #0e7b3b;
+      border-radius: 100vmax;
+    }
+
     @media (max-width: 767px) {
       &__logo {
         width: 20rem !important;

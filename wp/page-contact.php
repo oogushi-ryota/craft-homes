@@ -19,6 +19,19 @@ Template Name: お問い合わせ
       <?php echo do_shortcode('[mwform_formkey key="27"]'); ?>
 
     </div>
+
+    <div class="c-breadcrumb">
+      <div class="c-inner">
+        <ul class="c-breadcrumb__list">
+          <li class="c-breadcrumb__item">
+            <a href="<?php echo esc_url(home_url('/')); ?>" class="c-breadcrumb__link">トップ</a>
+          </li>
+          <li class="c-breadcrumb__item">
+            <span class="c-breadcrumb__link">お問い合わせ</span>
+          </li>
+        </ul>
+      </div>
+    </div>
   </main>
 
   <?php get_footer(); ?>

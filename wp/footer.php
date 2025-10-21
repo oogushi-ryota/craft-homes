@@ -57,7 +57,7 @@
           </ul>
         </div>
       </div>
-      <small class="l-footer__small">© 2025 Copyright Craft Homes 10206 Pearson Ave, Orlando, FL 32827</small>
+      <small class="l-footer__small">Copyright © by クラフトホームズ</small>
     </div>
   </footer>
 

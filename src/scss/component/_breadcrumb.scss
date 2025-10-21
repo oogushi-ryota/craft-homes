@@ -2,32 +2,21 @@
 
 .c-breadcrumb {
   & {
-    margin-top: 16rem;
-    padding: 0 20rem;
+    margin-top: 8rem;
 
     @media (max-width: 767px) {
-      margin-top: 10rem;
-      padding: 0 2rem;
+      margin-top: 5.6rem;
     } 
-
-    &__nav {
-      padding-bottom:  1.6rem;
-      border-bottom: solid 1px #D8D8D8;
-
-      @media (max-width: 767px) {
-        padding-bottom: 1.2rem;
-      }
-    }
 
     &__list {
       display: flex;
       align-items: center;
       justify-content: flex-start;
       flex-wrap: wrap;
-      gap: 0 3rem;
+      gap: 0 8.6rem;
 
       @media (max-width: 767px) {
-        gap: 0 2rem;
+        gap: 0 4.4rem;
       }
     }
 
@@ -37,29 +26,27 @@
       &:not(:last-child) {
         &::after {
           content: "";
-          width: .6rem;
-          height: 1.1rem;
-          background-image: url(../img/common/breadcrumb_arrow.svg);
-          background-repeat: no-repeat;
-          background-size: contain;
+          width: 4rem;
+          height: 1px;
+          background-color: $color-base;
           position: absolute;
-          top: 56%;
-          right: -1.4rem;
+          top: 50%;
+          right: -6.4rem;
           transform: translateY(-50%);
           -webkit-transform: translateY(-50%);
           -ms-transform: translateY(-50%);
 
           @media (max-width: 767px) {
-            width: .4rem;
-            height: .8rem;
+            width: 2.4rem;
+            right: -3.4rem;
           }
         }
       }
     }
 
     &__link {
-      
-      font-size: 1.6rem;
+      color: $color-base;
+      font-weight: 700;
       line-height: 100%;
 
       @media (max-width: 767px) {
