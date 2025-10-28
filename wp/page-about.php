@@ -6,6 +6,8 @@ Template Name: 会社概要
   <?php get_header(); ?>
 
   <main class="l-main">
+    <?php get_template_part('parts/fixed-btn'); ?>
+    
     <div class="p-about">
       <section class="c-under-fv c-under-fv--about">
         <div class="c-inner">

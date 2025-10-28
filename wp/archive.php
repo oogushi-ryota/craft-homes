@@ -1,6 +1,8 @@
   <?php get_header(); ?>
 
   <main class="l-main">
+    <?php get_template_part('parts/fixed-btn'); ?>
+    
     <div class="p-news">
       <section class="c-under-fv c-under-fv--news">
         <div class="c-inner">

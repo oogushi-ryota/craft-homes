@@ -6,6 +6,8 @@ Template Name: 内装リフォーム
   <?php get_header(); ?>
 
   <main class="l-main">
+    <?php get_template_part('parts/fixed-btn'); ?>
+    
     <div class="p-reform p-interior">
       <section class="c-under-fv c-under-fv--interior">
         <div class="c-inner">

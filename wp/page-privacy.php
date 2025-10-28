@@ -6,6 +6,8 @@ Template Name: プライバシーポリシー
   <?php get_header(); ?>
 
   <main class="l-main">
+    <?php get_template_part('parts/fixed-btn'); ?>
+    
     <div class="p-privacy">
       <section class="c-under-fv c-under-fv--privacy">
         <div class="c-inner">

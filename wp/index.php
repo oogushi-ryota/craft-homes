@@ -6,11 +6,17 @@ Template Name: トップページ
   <?php get_header(); ?>
 
   <main class="l-main">
+    <?php get_template_part('parts/fixed-btn'); ?>
+
     <div class="p-top">
       <section class="p-top-fv">
         <div class="p-top-fv__bg">
           <div class="c-inner">
             <div class="p-top-fv__ttlarea">
+              <div class="p-top-fv__leadarea">
+                <span class="p-top-fv__lead">補助金申請、私たちが徹底サポート</span>
+                <span class="p-top-fv__note">※地域により補助金の条件は異なります。</span>
+              </div>
               <h1 class="p-top-fv__ttl">
                 新しいと暮らす<br>
                 リフォームの住まいで

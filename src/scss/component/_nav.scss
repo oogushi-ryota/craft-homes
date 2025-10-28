@@ -30,13 +30,18 @@
       gap: .8rem;
     }
 
-    &__contact {
-      
+    &__tel-btn {
+      color: $color-white;
+      height: 7rem;
+      padding: 0 4rem;
+      background-color: $color-orange;
+      border-radius: 100vmax;
     }
 
     &__contact-btn {
       color: $color-white;
-      padding: 2.4rem 4rem;
+      height: 7rem;
+      padding: 0 4rem;
       background-color: $color-green;
       border-radius: 100vmax;
     }

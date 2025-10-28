@@ -6,6 +6,8 @@ Template Name: 外装リフォーム
   <?php get_header(); ?>
 
   <main class="l-main">
+    <?php get_template_part('parts/fixed-btn'); ?>
+    
     <div class="p-reform p-exterior">
       <section class="c-under-fv c-under-fv--exterior">
         <div class="c-inner">

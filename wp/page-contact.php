@@ -6,6 +6,8 @@ Template Name: お問い合わせ
   <?php get_header(); ?>
 
   <main class="l-main">
+    <?php get_template_part('parts/fixed-btn'); ?>
+    
     <div class="p-contact">
       <section class="c-under-fv c-under-fv--contact">
         <div class="c-inner">

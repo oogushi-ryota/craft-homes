@@ -1,25 +1,3 @@
-// ▼Lenis をインポート
-import Lenis from "@studio-freight/lenis";
-// ▲Lenis をインポート
-
-// ▼慣性スクロール
-export function initSmoothScroll() {
-  const lenis = new Lenis({
-    lerp: 0.1,
-    duration: 2,
-  });
-
-  function raf(time) {
-    lenis.raf(time); // スクロールの滑らかさを調整するための値です。値が小さいほど滑らかなスクロールになります。通常は0から1の間の値を指定します。
-    requestAnimationFrame(raf); // スクロールアニメーションのデフォルトの持続時間を指定します。単位は秒です。
-  }
-
-  requestAnimationFrame(raf);
-
-  return lenis;
-}
-// ▲慣性スクロール
-
 // ▼スムーススクロール処理
 export function initAnchorSmoothScroll() {
   const links = document.querySelectorAll('a[href*="#"]');
@@ -52,3 +30,30 @@ export function initAnchorSmoothScroll() {
   });
 }
 // ▲スムーススクロール処理
+
+// ▼l-footer が画面内に入ったら c-fixed-btn に is-hidden クラスを付与
+export function fixedBtnObserver() {
+  const fixedBtn = document.querySelector('.c-fixed-btn');
+  const footer = document.querySelector('.l-footer');
+
+  if (!fixedBtn || !footer) return;
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          fixedBtn.classList.add('is-hidden');
+        } else {
+          fixedBtn.classList.remove('is-hidden');
+        }
+      });
+    },
+    {
+      root: null, // ビューポートを基準
+      threshold: 0, // 一部でも入ったら発火
+    }
+  );
+
+  observer.observe(footer);
+}
+// ▲l-footer が画面内に入ったら c-fixed-btn に is-hidden クラスを付与
