@@ -13,10 +13,6 @@ Template Name: トップページ
         <div class="p-top-fv__bg">
           <div class="c-inner">
             <div class="p-top-fv__ttlarea">
-              <div class="p-top-fv__leadarea">
-                <span class="p-top-fv__lead">補助金申請、私たちが徹底サポート</span>
-                <span class="p-top-fv__note">※地域により補助金の条件は異なります。</span>
-              </div>
               <h1 class="p-top-fv__ttl">
                 新しいと暮らす<br>
                 リフォームの住まいで
@@ -29,6 +25,10 @@ Template Name: トップページ
 
       <section class="p-top-lead">
         <div class="c-inner">
+          <div class="p-top-lead__leadbox">
+            <span class="p-top-lead__leadbox-txt">補助金申請、私たちが徹底サポート</span>
+            <span class="p-top-lead__leadbox-note">※地域により補助金の条件は異なります。</span>
+          </div>
           <div class="p-top-lead__cont">
             <h2 class="p-top-lead__ttl">
               大切な住まいを、<br>

@@ -8,15 +8,58 @@
       margin-top: 4rem;
     }
 
+    &__leadbox {
+      width: 90rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin: 0 auto;
+      padding: 4rem;
+      background-color: $color-white;
+      border-radius: .8rem;
+      border: solid .5rem $color-green;
+
+      @media (max-width: 767px) {
+        width: 100%;
+        padding: 1.2rem;
+        border: solid .3rem $color-green;
+      }
+    }
+
+    &__leadbox-txt {
+      color: $color-green;
+      font-size: 4.8rem;
+      font-weight: 700;
+      line-height: 100%;
+
+      @media (max-width: 767px) {
+        font-size: 1.8rem;
+      }
+    }
+
+    &__leadbox-note {
+      font-size: 2.8rem;
+      line-height: 100%;
+      margin-top: 2.4rem;
+
+      @media (max-width: 767px) {
+        font-size: 1.4rem;
+        margin-top: 1.2rem;
+      }
+    }
+
     &__cont {
       display: flex;
       align-items: center;
       justify-content: space-between;
+      margin-top: 5.6rem;
 
       @media (max-width: 767px) {
         align-items: flex-start;
         flex-direction: column;
         gap: 3.2rem;
+        margin-top: 3.2rem;
       }
     }
 
