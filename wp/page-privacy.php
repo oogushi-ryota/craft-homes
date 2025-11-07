@@ -9,7 +9,11 @@ Template Name: プライバシーポリシー
     <?php get_template_part('parts/fixed-btn'); ?>
     
     <div class="p-privacy">
-      <section class="c-under-fv c-under-fv--privacy">
+      <?php
+      $privacy_bg_id = SCF::get('privacy-fv');
+      $privacy_bg_url = wp_get_attachment_url($privacy_bg_id);
+      ?>
+      <section class="c-under-fv c-under-fv--privacy" style="background-image: url('<?php echo esc_url($privacy_bg_url); ?>');">
         <div class="c-inner">
           <div class="c-under-ttl">
             <span class="c-under-ttl__en">Privacy Policy</span>

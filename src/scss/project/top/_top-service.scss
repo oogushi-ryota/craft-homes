@@ -49,13 +49,13 @@
         border-radius: 1rem;
       }
 
-      &--exterior {
-        background-image: url("../img/top/service/service_img01.jpg");
-      }
+      // &--exterior {
+      //   background-image: url("../img/top/service/service_img01.jpg");
+      // }
 
-      &--interior {
-        background-image: url("../img/top/service/service_img02.jpg");
-      }
+      // &--interior {
+      //   background-image: url("../img/top/service/service_img02.jpg");
+      // }
 
       &::before {
         content: "";

@@ -9,7 +9,19 @@ Template Name: 新着情報詳細
     <?php get_template_part('parts/fixed-btn'); ?>
     
     <div class="p-news">
-      <section class="c-under-fv c-under-fv--news">
+      <?php
+      // ダミーの固定ページ（news-setting）を取得
+      $news_page = get_page_by_path('news-setting');
+
+      if ($news_page) :
+        // SCFから画像IDを取得
+        $news_fv_id = SCF::get('news-fv', $news_page->ID);
+
+        // 添付ファイルIDからURLを取得
+        $news_fv_url = wp_get_attachment_url($news_fv_id);
+      endif;
+      ?>
+      <section class="c-under-fv c-under-fv--news" style="background-image: url('<?php echo esc_url($news_fv_url); ?>');">
         <div class="c-inner">
           <div class="c-under-ttl">
             <span class="c-under-ttl__en">News</span>

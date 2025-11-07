@@ -58,11 +58,27 @@ Template Name: トップページ
                   これからも地元の皆様と共に歩み、信頼されるパートナーとして、安心できる住まいづくりをお手伝いします。
                 </p>
               </div>
+              <?php
+              // ダミーのトップページ（top-settings）を取得
+              $top_page = get_page_by_path('top-settings');
+              if ($top_page) :
+                // 画像フィールドを取得（IDで返ってくる）
+                $points_img01_id = SCF::get('points_img01', $top_page->ID);
+                $points_img01_sp_id = SCF::get('points_img01-sp', $top_page->ID);
+
+                // 添付IDをURLに変換
+                $points_img01 = wp_get_attachment_url($points_img01_id);
+                $points_img01_sp = wp_get_attachment_url($points_img01_sp_id);
+              endif;
+              ?>
               <picture class="p-top-points__img">
-                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/top/points/points_img01_sp.webp" type="image/webp" media="(max-width: 767px)">
-                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/top/points/points_img01_sp.png" media="(max-width: 767px)">
-                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/top/points/points_img01.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/points/points_img01.png" width="936" height="450" alt="地域密着・お客様第一">
+                <?php if (!empty($points_img01_sp)) : ?>
+                  <source srcset="<?php echo esc_url($points_img01_sp); ?>" media="(max-width: 767px)">
+                <?php endif; ?>
+
+                <?php if (!empty($points_img01)) : ?>
+                  <img src="<?php echo esc_url($points_img01); ?>" width="936" height="450" alt="地域密着・お客様第一">
+                <?php endif; ?>
               </picture>
             </li>
             <li class="p-top-points__item">
@@ -74,9 +90,19 @@ Template Name: トップページ
                   コストを抑えながらも、高品質な施工を両立させています。
                 </p>
               </div>
+              <?php
+              // ダミーのトップページ（top-settings）を取得
+              $top_page = get_page_by_path('top-settings');
+              if ($top_page) :
+                // 画像フィールドを取得（IDで返ってくる）
+                $points_img02_id = SCF::get('points_img02', $top_page->ID);
+
+                // 添付IDをURLに変換
+                $points_img02 = wp_get_attachment_url($points_img02_id);
+              endif;
+              ?>
               <picture class="p-top-points__img">
-                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/top/points/points_img02.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/points/points_img02.jpg" width="936" height="450" alt="中間マージンなしで適正価格">
+                <img src="<?php echo esc_url($points_img02); ?>" width="936" height="450" alt="中間マージンなしで適正価格">
               </picture>
             </li>
             <li class="p-top-points__item">
@@ -88,9 +114,19 @@ Template Name: トップページ
                   安心して任せられる品質を、一つひとつの現場で実現しています。
                 </p>
               </div>
+              <?php
+              // ダミーのトップページ（top-settings）を取得
+              $top_page = get_page_by_path('top-settings');
+              if ($top_page) :
+                // 画像フィールドを取得（IDで返ってくる）
+                $points_img03_id = SCF::get('points_img03', $top_page->ID);
+
+                // 添付IDをURLに変換
+                $points_img03 = wp_get_attachment_url($points_img03_id);
+              endif;
+              ?>
               <picture class="p-top-points__img">
-                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/top/points/points_img03.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/points/points_img03.jpg" width="936" height="450" alt="中間マージンなしで適正価格">
+                <img src="<?php echo esc_url($points_img03); ?>" width="936" height="450" alt="中間マージンなしで適正価格">
               </picture>
             </li>
           </ol>
@@ -105,7 +141,18 @@ Template Name: トップページ
             屋根・外壁・ベランダ・外構から、キッチン・浴室・トイレまで、確かな施工で住まいを守り続けます。
           </p>
           <div class="p-top-service__cont">
-            <a href="<?php echo esc_url(home_url('/exterior/')); ?>" class="p-top-service__link p-top-service__link--exterior">
+            <?php
+            // ダミーのトップページ（top-settings）を取得
+            $top_page = get_page_by_path('top-settings');
+            if ($top_page) :
+              // 画像フィールドを取得（IDで返ってくる）
+              $exterior_img_id = SCF::get('exterior-img', $top_page->ID);
+
+              // 添付IDをURLに変換
+              $exterior_img = wp_get_attachment_url($exterior_img_id);
+            endif;
+            ?>
+            <a href="<?php echo esc_url(home_url('/exterior/')); ?>" class="p-top-service__link p-top-service__link--exterior" style="background-image: url('<?php echo esc_url($exterior_img); ?>');">
               <h3 class="p-top-service__cont-ttl">外装リフォーム</h3>
               <span class="p-top-service__hover-btn">
                 詳しく見る
@@ -114,7 +161,18 @@ Template Name: トップページ
                 </svg>
               </span>
             </a>
-            <a href="<?php echo esc_url(home_url('/interior/')); ?>" class="p-top-service__link p-top-service__link--interior">
+            <?php
+            // ダミーのトップページ（top-settings）を取得
+            $top_page = get_page_by_path('top-settings');
+            if ($top_page) :
+              // 画像フィールドを取得（IDで返ってくる）
+              $interior_img_id = SCF::get('interior-img', $top_page->ID);
+
+              // 添付IDをURLに変換
+              $interior_img = wp_get_attachment_url($interior_img_id);
+            endif;
+            ?>
+            <a href="<?php echo esc_url(home_url('/interior/')); ?>" class="p-top-service__link p-top-service__link--interior" style="background-image: url('<?php echo esc_url($interior_img); ?>');">
               <h3 class="p-top-service__cont-ttl">内装リフォーム</h3>
               <span class="p-top-service__hover-btn">
                 詳しく見る
@@ -129,9 +187,19 @@ Template Name: トップページ
 
       <section class="p-top-about">
         <div class="p-top-about__cont">
+          <?php
+          // ダミーのトップページ（top-settings）を取得
+          $top_page = get_page_by_path('top-settings');
+          if ($top_page) :
+            // 画像フィールドを取得（IDで返ってくる）
+            $about_img_id = SCF::get('about_img', $top_page->ID);
+
+            // 添付IDをURLに変換
+            $about_img = wp_get_attachment_url($about_img_id);
+          endif;
+          ?>
           <picture class="p-top-about__img">
-            <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/top/about/about_img.webp" type="image/webp">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top/about/about_img.jpg" width="886" height="800" alt="会社概要">
+            <img src="<?php echo esc_url($about_img); ?>" width="886" height="800" alt="会社概要">
           </picture>
           <div class="p-top-about__txtarea">
             <h2 class="p-top-about__ttl c-sec-ttl">会社概要</h2>

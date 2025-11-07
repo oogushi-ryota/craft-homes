@@ -9,7 +9,11 @@ Template Name: 外装リフォーム
     <?php get_template_part('parts/fixed-btn'); ?>
     
     <div class="p-reform p-exterior">
-      <section class="c-under-fv c-under-fv--exterior">
+      <?php
+      $exterior_bg_id = SCF::get('exterior-fv');
+      $exterior_bg_url = wp_get_attachment_url($exterior_bg_id);
+      ?>
+      <section class="c-under-fv c-under-fv--exterior" style="background-image: url('<?php echo esc_url($exterior_bg_url); ?>');">
         <div class="c-inner">
           <div class="c-under-ttl">
             <span class="c-under-ttl__en">Exterior Renovation</span>
@@ -42,9 +46,12 @@ Template Name: 外装リフォーム
           <ul class="p-reform-reason__list">
             <li class="p-reform-reason__item">
               <div class="p-reform-reason__imgwrap">
+                <?php
+                $reason_img01_id = SCF::get('reason_img01');
+                $reason_img01_url = wp_get_attachment_url($reason_img01_id);
+                ?>
                 <picture class="p-reform-reason__img">
-                  <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/exterior/reason/reason_img01.webp" type="image/webp">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/exterior/reason/reason_img01.jpg" width="330" height="400" alt="外壁の色あせ・ひび割れ">
+                  <img src="<?php echo esc_url($reason_img01_url); ?>" width="330" height="400" alt="外壁の色あせ・ひび割れ">
                 </picture>
                 <h3 class="p-reform-reason__item-ttl">外壁の色あせ・ひび割れ</h3>
               </div>
@@ -52,9 +59,12 @@ Template Name: 外装リフォーム
             </li>
             <li class="p-reform-reason__item">
               <div class="p-reform-reason__imgwrap">
+                <?php
+                $reason_img02_id = SCF::get('reason_img02');
+                $reason_img02_url = wp_get_attachment_url($reason_img02_id);
+                ?>
                 <picture class="p-reform-reason__img">
-                  <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/exterior/reason/reason_img02.webp" type="image/webp">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/exterior/reason/reason_img02.jpg" width="330" height="400" alt="屋根材のズレや破損">
+                  <img src="<?php echo esc_url($reason_img02_url); ?>" width="330" height="400" alt="屋根材のズレや破損">
                 </picture>
                 <h3 class="p-reform-reason__item-ttl">屋根材のズレや破損</h3>
               </div>
@@ -62,9 +72,12 @@ Template Name: 外装リフォーム
             </li>
             <li class="p-reform-reason__item">
               <div class="p-reform-reason__imgwrap">
+                <?php
+                $reason_img03_id = SCF::get('reason_img03');
+                $reason_img03_url = wp_get_attachment_url($reason_img03_id);
+                ?>
                 <picture class="p-reform-reason__img">
-                  <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/exterior/reason/reason_img03.webp" type="image/webp">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/exterior/reason/reason_img03.jpg" width="330" height="400" alt="ベランダの防水層の劣化">
+                  <img src="<?php echo esc_url($reason_img03_url); ?>" width="330" height="400" alt="ベランダの防水層の劣化">
                 </picture>
                 <h3 class="p-reform-reason__item-ttl">ベランダの防水層の劣化</h3>
               </div>
@@ -72,9 +85,12 @@ Template Name: 外装リフォーム
             </li>
             <li class="p-reform-reason__item">
               <div class="p-reform-reason__imgwrap">
+                <?php
+                $reason_img04_id = SCF::get('reason_img04');
+                $reason_img04_url = wp_get_attachment_url($reason_img04_id);
+                ?>
                 <picture class="p-reform-reason__img">
-                  <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/exterior/reason/reason_img04.webp" type="image/webp">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/exterior/reason/reason_img04.jpg" width="330" height="400" alt="外構やフェンスの老朽化">
+                  <img src="<?php echo esc_url($reason_img04_url); ?>" width="330" height="400" alt="外構やフェンスの老朽化">
                 </picture>
                 <h3 class="p-reform-reason__item-ttl">外構やフェンスの老朽化</h3>
               </div>
@@ -92,25 +108,34 @@ Template Name: 外装リフォーム
           </h2>
           <ol class="p-reform-feature__list">
             <li class="p-reform-feature__item">
+              <?php
+              $feature_img01_id = SCF::get('feature_img01');
+              $feature_img01_url = wp_get_attachment_url($feature_img01_id);
+              ?>
               <picture class="p-reform-feature__img">
-                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/exterior/feature/feature_img01.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/exterior/feature/feature_img01.jpg" width="390" height="310" alt="屋外環境に強い施工">
+                <img src="<?php echo esc_url($feature_img01_url); ?>" width="390" height="310" alt="屋外環境に強い施工">
               </picture>
               <h3 class="p-reform-feature__item-ttl">屋外環境に強い施工</h3>
               <p class="p-reform-feature__item-txt">紫外線や風雨にさらされる外装だからこそ、耐久性を重視した施工を行います。</p>
             </li>
             <li class="p-reform-feature__item">
+              <?php
+              $feature_img02_id = SCF::get('feature_img02');
+              $feature_img02_url = wp_get_attachment_url($feature_img02_id);
+              ?>
               <picture class="p-reform-feature__img">
-                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/exterior/feature/feature_img02.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/exterior/feature/feature_img02.jpg" width="390" height="310" alt="幅広い工事に対応">
+                <img src="<?php echo esc_url($feature_img02_url); ?>" width="390" height="310" alt="幅広い工事に対応">
               </picture>
               <h3 class="p-reform-feature__item-ttl">幅広い工事に対応</h3>
               <p class="p-reform-feature__item-txt">屋根・外壁・ベランダから外構・太陽光まで、外装全般をまとめてご相談いただけます。</p>
             </li>
             <li class="p-reform-feature__item">
+              <?php
+              $feature_img03_id = SCF::get('feature_img03');
+              $feature_img03_url = wp_get_attachment_url($feature_img03_id);
+              ?>
               <picture class="p-reform-feature__img">
-                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/exterior/feature/feature_img03.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/exterior/feature/feature_img03.jpg" width="390" height="310" alt="景観と機能性の両立">
+                <img src="<?php echo esc_url($feature_img03_url); ?>" width="390" height="310" alt="景観と機能性の両立">
               </picture>
               <h3 class="p-reform-feature__item-ttl">景観と機能性の両立</h3>
               <p class="p-reform-feature__item-txt">美観を整えるだけでなく、防水性や断熱性など機能性も高めるリフォームをご提案します。</p>
@@ -126,9 +151,12 @@ Template Name: 外装リフォーム
         </h2>
         <div class="p-reform-variation__wrap">
           <div class="p-reform-variation__cont">
+            <?php
+            $variation_img01_id = SCF::get('variation_img01');
+            $variation_img01_url = wp_get_attachment_url($variation_img01_id);
+            ?>
             <picture class="p-reform-variation__img">
-              <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/exterior/variation/variation_img01.webp" type="image/webp">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/exterior/variation/variation_img01.jpg" width="936" height="450" alt="屋根リフォーム">
+              <img src="<?php echo esc_url($variation_img01_url); ?>" width="936" height="450" alt="屋根リフォーム">
             </picture>
             <div class="p-reform-variation__txtarea">
               <h3 class="p-reform-variation__cont-ttl">屋根リフォーム</h3>
@@ -141,9 +169,12 @@ Template Name: 外装リフォーム
             </div>
           </div>
           <div class="p-reform-variation__cont">
+            <?php
+            $variation_img02_id = SCF::get('variation_img02');
+            $variation_img02_url = wp_get_attachment_url($variation_img02_id);
+            ?>
             <picture class="p-reform-variation__img">
-              <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/exterior/variation/variation_img02.webp" type="image/webp">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/exterior/variation/variation_img02.jpg" width="936" height="450" alt="外壁リフォーム">
+              <img src="<?php echo esc_url($variation_img02_url); ?>" width="936" height="450" alt="外壁リフォーム">
             </picture>
             <div class="p-reform-variation__txtarea">
               <h3 class="p-reform-variation__cont-ttl">外壁リフォーム</h3>
@@ -156,9 +187,12 @@ Template Name: 外装リフォーム
             </div>
           </div>
           <div class="p-reform-variation__cont">
+            <?php
+            $variation_img03_id = SCF::get('variation_img03');
+            $variation_img03_url = wp_get_attachment_url($variation_img03_id);
+            ?>
             <picture class="p-reform-variation__img">
-              <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/exterior/variation/variation_img03.webp" type="image/webp">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/exterior/variation/variation_img03.jpg" width="936" height="450" alt="ベランダリフォーム">
+              <img src="<?php echo esc_url($variation_img03_url); ?>" width="936" height="450" alt="ベランダリフォーム">
             </picture>
             <div class="p-reform-variation__txtarea">
               <h3 class="p-reform-variation__cont-ttl">ベランダリフォーム</h3>
@@ -170,9 +204,12 @@ Template Name: 外装リフォーム
             </div>
           </div>
           <div class="p-reform-variation__cont">
+            <?php
+            $variation_img04_id = SCF::get('variation_img04');
+            $variation_img04_url = wp_get_attachment_url($variation_img04_id);
+            ?>
             <picture class="p-reform-variation__img">
-              <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/exterior/variation/variation_img04.webp" type="image/webp">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/exterior/variation/variation_img04.jpg" width="936" height="450" alt="外構・庭リフォーム">
+              <img src="<?php echo esc_url($variation_img04_url); ?>" width="936" height="450" alt="外構・庭リフォーム">
             </picture>
             <div class="p-reform-variation__txtarea">
               <h3 class="p-reform-variation__cont-ttl">外構・庭リフォーム</h3>
@@ -184,9 +221,12 @@ Template Name: 外装リフォーム
             </div>
           </div>
           <div class="p-reform-variation__cont">
+            <?php
+            $variation_img05_id = SCF::get('variation_img05');
+            $variation_img05_url = wp_get_attachment_url($variation_img05_id);
+            ?>
             <picture class="p-reform-variation__img">
-              <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/exterior/variation/variation_img05.webp" type="image/webp">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/exterior/variation/variation_img05.jpg" width="936" height="450" alt="太陽光発電・省エネ機器">
+              <img src="<?php echo esc_url($variation_img05_url); ?>" width="936" height="450" alt="太陽光発電・省エネ機器">
             </picture>
             <div class="p-reform-variation__txtarea">
               <h3 class="p-reform-variation__cont-ttl">太陽光発電・省エネ機器</h3>

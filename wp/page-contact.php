@@ -9,7 +9,11 @@ Template Name: お問い合わせ
     <?php get_template_part('parts/fixed-btn'); ?>
     
     <div class="p-contact">
-      <section class="c-under-fv c-under-fv--contact">
+      <?php
+      $contact_bg_id = SCF::get('contact-fv');
+      $contact_bg_url = wp_get_attachment_url($contact_bg_id);
+      ?>
+      <section class="c-under-fv c-under-fv--contact" style="background-image: url('<?php echo esc_url($contact_bg_url); ?>');">
         <div class="c-inner">
           <div class="c-under-ttl">
             <span class="c-under-ttl__en">Contact</span>

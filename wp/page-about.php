@@ -9,7 +9,11 @@ Template Name: 会社概要
     <?php get_template_part('parts/fixed-btn'); ?>
     
     <div class="p-about">
-      <section class="c-under-fv c-under-fv--about">
+      <?php
+      $about_bg_id = SCF::get('about-fv');
+      $about_bg_url = wp_get_attachment_url($about_bg_id);
+      ?>
+      <section class="c-under-fv c-under-fv--about" style="background-image: url('<?php echo esc_url($about_bg_url); ?>');">
         <div class="c-inner">
           <div class="c-under-ttl">
             <span class="c-under-ttl__en">Company</span>

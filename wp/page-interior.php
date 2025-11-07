@@ -9,7 +9,11 @@ Template Name: 内装リフォーム
     <?php get_template_part('parts/fixed-btn'); ?>
     
     <div class="p-reform p-interior">
-      <section class="c-under-fv c-under-fv--interior">
+      <?php
+      $interior_bg_id = SCF::get('interior-fv');
+      $interior_bg_url = wp_get_attachment_url($interior_bg_id);
+      ?>
+      <section class="c-under-fv c-under-fv--interior" style="background-image: url('<?php echo esc_url($interior_bg_url); ?>');">
         <div class="c-inner">
           <div class="c-under-ttl">
             <span class="c-under-ttl__en">Interior Renovation</span>
@@ -42,9 +46,12 @@ Template Name: 内装リフォーム
           <ul class="p-reform-reason__list">
             <li class="p-reform-reason__item">
               <div class="p-reform-reason__imgwrap">
+                <?php
+                $reason_img01_id = SCF::get('reason_img01');
+                $reason_img01_url = wp_get_attachment_url($reason_img01_id);
+                ?>
                 <picture class="p-reform-reason__img">
-                  <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/interior/reason/reason_img01.webp" type="image/webp">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/interior/reason/reason_img01.jpg" width="330" height="400" alt="キッチンや浴室設備の老朽化">
+                  <img src="<?php echo esc_url($reason_img01_url); ?>" width="330" height="400" alt="キッチンや浴室設備の老朽化">
                 </picture>
                 <h3 class="p-reform-reason__item-ttl">キッチンや浴室設備の老朽化</h3>
               </div>
@@ -52,9 +59,12 @@ Template Name: 内装リフォーム
             </li>
             <li class="p-reform-reason__item">
               <div class="p-reform-reason__imgwrap">
+                <?php
+                $reason_img02_id = SCF::get('reason_img02');
+                $reason_img02_url = wp_get_attachment_url($reason_img02_id);
+                ?>
                 <picture class="p-reform-reason__img">
-                  <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/interior/reason/reason_img02.webp" type="image/webp">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/interior/reason/reason_img02.jpg" width="330" height="400" alt="壁紙や床材の汚れ・傷み">
+                  <img src="<?php echo esc_url($reason_img02_url); ?>" width="330" height="400" alt="壁紙や床材の汚れ・傷み">
                 </picture>
                 <h3 class="p-reform-reason__item-ttl">壁紙や床材の汚れ・傷み</h3>
               </div>
@@ -62,9 +72,12 @@ Template Name: 内装リフォーム
             </li>
             <li class="p-reform-reason__item">
               <div class="p-reform-reason__imgwrap">
+                <?php
+                $reason_img03_id = SCF::get('reason_img03');
+                $reason_img03_url = wp_get_attachment_url($reason_img03_id);
+                ?>
                 <picture class="p-reform-reason__img">
-                  <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/interior/reason/reason_img03.webp" type="image/webp">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/interior/reason/reason_img03.jpg" width="330" height="400" alt="収納不足や間取りの使いづらさ">
+                  <img src="<?php echo esc_url($reason_img03_url); ?>" width="330" height="400" alt="収納不足や間取りの使いづらさ">
                 </picture>
                 <h3 class="p-reform-reason__item-ttl">収納不足や間取りの使いづらさ</h3>
               </div>
@@ -72,9 +85,12 @@ Template Name: 内装リフォーム
             </li>
             <li class="p-reform-reason__item">
               <div class="p-reform-reason__imgwrap">
+                <?php
+                $reason_img04_id = SCF::get('reason_img04');
+                $reason_img04_url = wp_get_attachment_url($reason_img04_id);
+                ?>
                 <picture class="p-reform-reason__img">
-                  <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/interior/reason/reason_img04.webp" type="image/webp">
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/img/interior/reason/reason_img04.jpg" width="330" height="400" alt="トイレや洗面の不具合">
+                  <img src="<?php echo esc_url($reason_img04_url); ?>" width="330" height="400" alt="トイレや洗面の不具合">
                 </picture>
                 <h3 class="p-reform-reason__item-ttl">トイレや洗面の不具合</h3>
               </div>
@@ -92,25 +108,34 @@ Template Name: 内装リフォーム
           </h2>
           <ol class="p-reform-feature__list">
             <li class="p-reform-feature__item">
+              <?php
+              $feature_img01_id = SCF::get('feature_img01');
+              $feature_img01_url = wp_get_attachment_url($feature_img01_id);
+              ?>
               <picture class="p-reform-feature__img">
-                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/interior/feature/feature_img01.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/interior/feature/feature_img01.jpg" width="390" height="310" alt="暮らしに合わせた最適な提案">
+                <img src="<?php echo esc_url($feature_img01_url); ?>" width="390" height="310" alt="暮らしに合わせた最適な提案">
               </picture>
               <h3 class="p-reform-feature__item-ttl">暮らしに合わせた最適な提案</h3>
               <p class="p-reform-feature__item-txt">家族構成やライフスタイルに合わせた、使いやすく快適な空間を実現します。</p>
             </li>
             <li class="p-reform-feature__item">
+              <?php
+              $feature_img02_id = SCF::get('feature_img02');
+              $feature_img02_url = wp_get_attachment_url($feature_img02_id);
+              ?>
               <picture class="p-reform-feature__img">
-                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/interior/feature/feature_img02.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/interior/feature/feature_img02.jpg" width="390" height="310" alt="デザイン性と機能性の両立">
+                <img src="<?php echo esc_url($feature_img02_url); ?>" width="390" height="310" alt="デザイン性と機能性の両立">
               </picture>
               <h3 class="p-reform-feature__item-ttl">デザイン性と機能性の両立</h3>
               <p class="p-reform-feature__item-txt">インテリアの雰囲気に調和しながら、最新設備を導入して快適さを高めます。</p>
             </li>
             <li class="p-reform-feature__item">
+              <?php
+              $feature_img03_id = SCF::get('feature_img03');
+              $feature_img03_url = wp_get_attachment_url($feature_img03_id);
+              ?>
               <picture class="p-reform-feature__img">
-                <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/interior/feature/feature_img03.webp" type="image/webp">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/interior/feature/feature_img03.jpg" width="390" height="310" alt="水回りリフォームの豊富な実績">
+                <img src="<?php echo esc_url($feature_img03_url); ?>" width="390" height="310" alt="水回りリフォームの豊富な実績">
               </picture>
               <h3 class="p-reform-feature__item-ttl">水回りリフォームの豊富な実績</h3>
               <p class="p-reform-feature__item-txt">キッチン・浴室・洗面・トイレなど、毎日使う場所だからこそ確かな施工で安心です。</p>
@@ -126,9 +151,12 @@ Template Name: 内装リフォーム
         </h2>
         <div class="p-reform-variation__wrap">
           <div class="p-reform-variation__cont">
+            <?php
+            $variation_img01_id = SCF::get('variation_img01');
+            $variation_img01_url = wp_get_attachment_url($variation_img01_id);
+            ?>
             <picture class="p-reform-variation__img">
-              <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/interior/variation/variation_img01.webp" type="image/webp">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/interior/variation/variation_img01.jpg" width="936" height="450" alt="キッチンリフォーム">
+              <img src="<?php echo esc_url($variation_img01_url); ?>" width="936" height="450" alt="キッチンリフォーム">
             </picture>
             <div class="p-reform-variation__txtarea">
               <h3 class="p-reform-variation__cont-ttl">キッチンリフォーム</h3>
@@ -141,9 +169,12 @@ Template Name: 内装リフォーム
             </div>
           </div>
           <div class="p-reform-variation__cont">
+            <?php
+            $variation_img02_id = SCF::get('variation_img02');
+            $variation_img02_url = wp_get_attachment_url($variation_img02_id);
+            ?>
             <picture class="p-reform-variation__img">
-              <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/interior/variation/variation_img02.webp" type="image/webp">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/interior/variation/variation_img02.jpg" width="936" height="450" alt="浴室リフォーム">
+              <img src="<?php echo esc_url($variation_img02_url); ?>" width="936" height="450" alt="浴室リフォーム">
             </picture>
             <div class="p-reform-variation__txtarea">
               <h3 class="p-reform-variation__cont-ttl">浴室リフォーム</h3>
@@ -155,9 +186,12 @@ Template Name: 内装リフォーム
             </div>
           </div>
           <div class="p-reform-variation__cont">
+            <?php
+            $variation_img03_id = SCF::get('variation_img03');
+            $variation_img03_url = wp_get_attachment_url($variation_img03_id);
+            ?>
             <picture class="p-reform-variation__img">
-              <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/interior/variation/variation_img03.webp" type="image/webp">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/interior/variation/variation_img03.jpg" width="936" height="450" alt="洗面リフォーム">
+              <img src="<?php echo esc_url($variation_img03_url); ?>" width="936" height="450" alt="洗面リフォーム">
             </picture>
             <div class="p-reform-variation__txtarea">
               <h3 class="p-reform-variation__cont-ttl">洗面リフォーム</h3>
@@ -169,9 +203,12 @@ Template Name: 内装リフォーム
             </div>
           </div>
           <div class="p-reform-variation__cont">
+            <?php
+            $variation_img04_id = SCF::get('variation_img04');
+            $variation_img04_url = wp_get_attachment_url($variation_img04_id);
+            ?>
             <picture class="p-reform-variation__img">
-              <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/interior/variation/variation_img04.webp" type="image/webp">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/interior/variation/variation_img04.jpg" width="936" height="450" alt="トイレリフォーム">
+              <img src="<?php echo esc_url($variation_img04_url); ?>" width="936" height="450" alt="トイレリフォーム">
             </picture>
             <div class="p-reform-variation__txtarea">
               <h3 class="p-reform-variation__cont-ttl">トイレリフォーム</h3>
@@ -183,9 +220,12 @@ Template Name: 内装リフォーム
             </div>
           </div>
           <div class="p-reform-variation__cont">
+            <?php
+            $variation_img05_id = SCF::get('variation_img05');
+            $variation_img05_url = wp_get_attachment_url($variation_img05_id);
+            ?>
             <picture class="p-reform-variation__img">
-              <source srcset="<?php echo get_template_directory_uri(); ?>/assets/img/interior/variation/variation_img05.webp" type="image/webp">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/interior/variation/variation_img05.jpg" width="936" height="450" alt="内装リフォーム（壁紙・床など）">
+              <img src="<?php echo esc_url($variation_img05_url); ?>" width="936" height="450" alt="内装リフォーム（壁紙・床など）">
             </picture>
             <div class="p-reform-variation__txtarea">
               <h3 class="p-reform-variation__cont-ttl">内装リフォーム<br class="is-sp">（壁紙・床など）</h3>
